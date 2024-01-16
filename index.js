@@ -11,31 +11,55 @@ const narration = [
   {
     id: 1,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "'Aie.. Ma tête… Mais.. ?! Où je suis là ?'",
+    subtitles2: "'Je ne me rappelle de rien.'",
+    subtitles3: "'Pourquoi je suis dans un casino ?'",
+    subtitles4: "'La salle me semble étrange, je n'y vois qu'une seule porte.'",
+    subtitles5: "'Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.'",
+    subtitles6: "'Dans quelle galère je me suis fourré...'",
   },
   // Après la salle 1, avant la salle 2.
   {
     id: 2,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "'Encore une salle …:soupire:'",
+    subtitles2: "'Toutes ces roulettes me font tourner la tête !'",
+    subtitles3: "'Ah, j'aperçois une autre porte, verrouillée celle-ci aussi…'",
+    subtitles4: "'Je vais devoir encore me débrouiller pour la dévérouiller.'",
+    subtitles5: "'Raaaah'",
   },
   // Après la salle 2, avant la salle 3.
   {
     id: 3,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "'Mais ce n'est pas possible !!'",
+    subtitles2: "'Il y en a combien de ces foutues salles-là ?!'",
+    subtitles3: "'Et j imagine qu elle est verrouillée",
+    subtitles4: "'Eh bah oui évidemment !'",
+    subtitles5: "': souffle: En plus, elle est lugubre celle-ci...'",
+    subtitles6: "'Aller, courage Gégé !'",
   },
   // Après la salle 3, avant la salle 4.
   {
     id: 4,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "':rire: Ahahahahahahahaha !'",
+    subtitles2: "':hurlement: AAAAAAAAAAH.'",
+    subtitles3: "'Je vais devenir fou !'",
+    subtitles4: "':pleure:'",
+    subtitles5: "':chuchotement: j ai peur…'",
   },
   // Après la salle 4, avant la salle 5.
   {
     id: 5,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "'Oooh la jolie salle !'",
+    subtitles2: "'Non elle me fait peur :effrayé:'",
+    subtitles3: "'J entends des voix",
+    subtitles4: "':pleure:'",
+    subtitles5: "':rire:'",
+    subtitles6: "'A l aiiiiiiiiiide :cri:!'",
+    subtitles7: "'Libérez moi :supplice:'",
   },
   // Après la salle 5, choix.
   {
