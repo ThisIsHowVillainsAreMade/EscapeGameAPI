@@ -1,10 +1,12 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const app = express();
 
 const port = 5000;
 
 app.use(cors("*"));
+app.use("/Scene1", express.static(path.join(__dirname, "./Scene1")));
 
 const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
@@ -54,9 +56,13 @@ const scene1 = [
     name: "jeton",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Mhm... Je devrais peut-être regarder ce jeton de plus près.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/Jeton.png",
     alt: "jeton de poker",
     inventory: true,
+    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    x: 400,
+    y: 650,
+    largeur: 30,
   },
   // Indices
   {
@@ -64,27 +70,36 @@ const scene1 = [
     name: "montre luxueuse",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Cette montre est arrêtée sur 10H10. Etrange...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/montre10.png",
     alt: "montre luxueuse",
     inventory: false,
+    x: 900,
+    y: 700,
+    largeur: 30,
   },
   {
     id: 3,
     name: "badge de sécurité",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Oh ! Un badge de sécurité. Il s'agit du numéro 809.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/badge809.png",
     alt: "badge de sécurité",
     inventory: false,
+    x: 1250,
+    y: 750,
+    largeur: 30,
   },
   {
     id: 4,
     name: "clef de machine à sous",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Cette clef permet d'ouvrir la machine à sous numéro 679.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/clé679.png",
     alt: "clef de machine à sous",
     inventory: false,
+    x: 500,
+    y: 600,
+    largeur: 30,
   },
   {
     id: 5,
@@ -92,9 +107,12 @@ const scene1 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Ce dé n’est pas comme les autres. Il semble truqué pour tomber perpétuellement sur le 2.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/dé.png",
     alt: "dé truqué",
     inventory: false,
+    x: 1040,
+    y: 590,
+    largeur: 30,
   },
   // Objets Autres
   {
@@ -102,9 +120,12 @@ const scene1 = [
     name: "caméra",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "J'ai comme l'impression d'être observé...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/caméra.png",
     alt: "caméra",
     inventory: false,
+    x: 1190,
+    y: 330,
+    largeur: 30,
   },
   {
     id: 7,
@@ -112,9 +133,12 @@ const scene1 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "KOF ! KOF ! Berk ! Ce cendrier contient un cigare encore fumant. Oh non, elles sont toutes noires maintenant ! Pourquoi j'ai mis les mains dedans, moi...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/CendierCigare.png",
     alt: "cendrier contenant un cigare",
     inventory: false,
+    x: 660,
+    y: 550,
+    largeur: 30,
   },
   {
     id: 8,
@@ -122,9 +146,12 @@ const scene1 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Il y a un bon paquet de jetons là-dedans... Ce sac sera bientôt à moi et.. ET JE SERAIS RIIIICHE ! MOUHIHAHAHAHAHA !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/SacJetons.png",
     alt: "sac de jetons",
     inventory: false,
+    x: 1200,
+    y: 550,
+    largeur: 30,
   },
   {
     id: 9,
@@ -132,9 +159,12 @@ const scene1 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Il faut que je remporte ces billets... Ca épongerai un peu mes dettes. Sinon, je pourrais aussi les rejouer pour gagner plus ? Oui. Bonne idée, je vais faire ça !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/BilletBanque.png",
     alt: "billets de banque",
     inventory: false,
+    x: 1350,
+    y: 650,
+    largeur: 30,
   },
   {
     id: 10,
@@ -142,9 +172,12 @@ const scene1 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Voyons voir.. que dit l'étiquette ? QUOI ? 90 DEGRES ? MAIS C'EST DU GEL HYDRO, PAS DE L'ALCOOL !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/BouteilleAlcool.png",
     alt: "bouteille d'alcool fort",
     inventory: false,
+    x: 1500,
+    y: 590,
+    largeur: 30,
   },
   {
     id: 11,
@@ -152,9 +185,12 @@ const scene1 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Un sex on the beach, oh yeah baby.. ! Ahah, je devrais en commander un pour Mary. Elle adore ça.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/VerreCocktail.png",
     alt: "verre à cocktail",
     inventory: false,
+    x: 570,
+    y: 440,
+    largeur: 50,
   },
   {
     id: 12,
@@ -162,27 +198,36 @@ const scene1 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "WOAAAAAW LES ENFOIRES ! Ils brassent un max ! Le livre de compte parle de lui-même !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/livreCompte.png",
     alt: "livre de comptes du casino",
     inventory: false,
+    x: 700,
+    y: 600,
+    largeur: 30,
   },
   {
     id: 13,
     name: "roulette",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Gagner à la roulette pourrait me sortir de la merde !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/roulette.png",
     alt: "roulette",
     inventory: false,
+    x: 1110,
+    y: 505,
+    largeur: 25,
   },
   {
     id: 14,
     name: "boîte de Xanax",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Un Xanax et ça repart !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene1/Xanax.png",
     alt: "boîte de Xanax",
     inventory: false,
+    x: 180,
+    y: 440,
+    largeur: 30,
   },
 ];
 
