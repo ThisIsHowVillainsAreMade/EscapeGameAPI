@@ -229,6 +229,17 @@ const scene1 = [
     y: 440,
     largeur: 30,
   },
+  {
+    id: 15,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: 679108092,
+    inventory: false,
+    x: 940,
+    y: 500,
+    largeur: 20,
+  },
 ];
 
 const scene2 = [
@@ -346,6 +357,14 @@ const scene2 = [
     subtitles: "... Ils nous observent.",
     picture: "INSERER LE PATH DE L IMAGE",
     alt: "caméra",
+    inventory: false,
+  },
+  {
+    id: 13,
+    name: "cadenas",
+    picture: "INSERER LE PATH DE L IMAGE",
+    alt: "caméra",
+    code: 679108092,
     inventory: false,
   },
 ];
