@@ -60,9 +60,9 @@ const scene1 = [
     alt: "jeton de poker",
     inventory: true,
     splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
-    x: 15,
-    y: 80,
-    largeur: 30,
+    x: 23,
+    y: 90,
+    largeur: 32,
   },
   // Indices
   {
@@ -73,9 +73,9 @@ const scene1 = [
     picture: "/Scene1/montre10.png",
     alt: "montre luxueuse",
     inventory: false,
-    x: 50,
-    y: 75,
-    largeur: 30,
+    x: 30,
+    y: 65,
+    largeur: 25,
   },
   {
     id: 3,
@@ -85,8 +85,8 @@ const scene1 = [
     picture: "/Scene1/badge809.png",
     alt: "badge de sécurité",
     inventory: false,
-    x: 70,
-    y: 75,
+    x: 79.5,
+    y: 55,
     largeur: 30,
   },
   {
