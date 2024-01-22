@@ -3,10 +3,15 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 
-const port = 5000;
+const port = process.env.PORT || 5000;
+// const port = 5000;
 
 app.use(cors("*"));
 app.use("/Scene1", express.static(path.join(__dirname, "./Scene1")));
+app.use("/Scene2", express.static(path.join(__dirname, "./Scene2")));
+app.use("/Scene3", express.static(path.join(__dirname, "./Scene3")));
+app.use("/Scene4", express.static(path.join(__dirname, "./Scene4")));
+app.use("/Scene5", express.static(path.join(__dirname, "./Scene5")));
 
 const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
@@ -245,14 +250,18 @@ const scene1 = [
 const scene2 = [
   // Indice 3D
   {
-    id: 1,
+    id: 100,
     name: "sucre d'orge",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/sucre.png",
+    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
     alt: "sucre d'orge",
     inventory: true,
+    x: 15,
+    y: 15,
+    largeur: 40,
   },
   // Indice
   {
@@ -260,9 +269,12 @@ const scene2 = [
     name: "roulette",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Tiens ? Cette roulette semble différente de tout à l'heure...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/roulette.png",
     alt: "roulette",
     inventory: false,
+    x: 50,
+    y: 50,
+    largeur: 30,
   },
   //  Objets Autres
   {
@@ -271,9 +283,12 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "On dirait celles de Mary. Ca signifie qu'elle est ici ?! Oh non, elle ne doit pas me voir ici !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/lunette.png",
     alt: "lunettes de soleil fashion",
     inventory: false,
+    x: 20,
+    y: 20,
+    largeur: 30,
   },
   {
     id: 4,
@@ -281,18 +296,24 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Ma parole, ils fument tous le cigare ici ou quoi ? Et puis, je croyais que c'était devenu interdit dans les lieux publics ! Orh !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/cigare.png",
     alt: "cigare",
     inventory: false,
+    x: 30,
+    y: 30,
+    largeur: 30,
   },
   {
     id: 5,
     name: "radio",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[MUSIQUE ENFANTINE]",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/radio.png",
     alt: "radio",
     inventory: false,
+    x: 40,
+    y: 40,
+    largeur: 30,
   },
   {
     id: 6,
@@ -300,9 +321,12 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Une panne.. ça arrive à tout le monde ! [RIRES] Plus sérieusement, c'est un peu vétuste ici, non ?",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/EnPanne.png",
     alt: "panneau où il est écrit EN PANNE",
     inventory: false,
+    x: 50,
+    y: 50,
+    largeur: 30,
   },
   {
     id: 7,
@@ -310,76 +334,90 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "[VOIX TREMBLANTE] Eh ! M'sieur l'personnel... ? Il faut changer les ampoules... hein... ? J'ai peur du noir, moi...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/",
     alt: "lumière vascillante",
     inventory: false,
+    x: 60,
+    y: 60,
+    largeur: 30,
   },
   {
     id: 8,
     name: "plante fânée",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "pauvre plante ...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/PlanteFanée.png",
     alt: "plante fânée",
     inventory: false,
+    x: 70,
+    y: 70,
+    largeur: 30,
   },
   {
     id: 9,
     name: "sculpture étrange",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Je crois que je ne comprendrais jamais l'art.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/Scuplture.png",
     alt: "sculpture étrange",
     inventory: false,
+    x: 80,
+    y: 80,
+    largeur: 30,
   },
   {
     id: 10,
     name: "tableau de l'as de pique",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Argh ! Rien de plus stressant qu'un tableau pas droit !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/TableauPenché.png",
     alt: "tableau d'un as de pique pas droit",
     inventory: false,
+    x: 60,
+    y: 80,
+    largeur: 30,
   },
   {
     id: 11,
     name: "verre de whisky",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Mettez moi juste un doigt !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/VerreWhisky.png",
     alt: "verre de whisky",
     inventory: false,
+    x: 45,
+    y: 70,
+    largeur: 30,
   },
   {
     id: 12,
     name: "caméra",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "... Ils nous observent.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene2/caméra.png",
     alt: "caméra",
     inventory: false,
-  },
-  {
-    id: 13,
-    name: "cadenas",
-    picture: "INSERER LE PATH DE L IMAGE",
-    alt: "caméra",
-    code: 679108092,
-    inventory: false,
+    x: 65,
+    y: 35,
+    largeur: 30,
   },
 ];
 
 const scene3 = [
   // Indice 3D
   {
-    id: 1,
-    name: "thermètre digital",
+    id: 200,
+    name: "thermomètre digital",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Je suis pas fan de ce genre de technologies... Pour autant, celui-ci semble différent.",
-    picture: "INSERER LE PATH DE L IMAGE",
-    alt: "thermètre digital",
+    picture: "/Scene3/thermometre.png",
+    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    alt: "thermomètre digital",
     inventory: true,
+    x: 65,
+    y: 35,
+    largeur: 30,
   },
   // Indices à ouvrir dans une modale
   {
@@ -388,9 +426,12 @@ const scene3 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Les rapports de sécurité du casino... C'est pas très rassurants.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/RapportSecurité.png",
     alt: "rapports de sécurité",
     inventory: false,
+    x: 20,
+    y: 35,
+    largeur: 30,
   },
   {
     id: 3,
@@ -398,18 +439,24 @@ const scene3 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Un Casino hôtel ? Ils sont complets, et même en sureffectifs...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/ReservationHotel.png",
     alt: "fiche de réservation d'hôtel",
     inventory: false,
+    x: 30,
+    y: 35,
+    largeur: 30,
   },
   {
     id: 4,
     name: "uniforme infirmier",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Eh mais, c'est l'uniforme des employés du casino, non ?",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/UniformeInfirmier.png",
     alt: "uniforme infirmier",
     inventory: false,
+    x: 50,
+    y: 75,
+    largeur: 30,
   },
   {
     id: 5,
@@ -417,9 +464,12 @@ const scene3 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Les médecins écrivent toujours en langage codés ahah.. Tiens, pourquoi je parle de médecins, moi ?",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/TableauHospitalier.png",
     alt: "tableau hospitalier",
     inventory: false,
+    x: 75,
+    y: 70,
+    largeur: 30,
   },
   // Objets Autres
   {
@@ -428,63 +478,84 @@ const scene3 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Un livre sur les probabilités... Elles sont infimes. Ce sont EUX, les tricheurs.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/LivreProba.png",
     alt: "livre sur les probabilités",
     inventory: false,
+    x: 50,
+    y: 60,
+    largeur: 30,
   },
   {
     id: 7,
     name: "verre de cocktail",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "KLING KLING KLING Tchin tchin la compagnie !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/VerreCocktail.png",
     alt: "verre de cocktail",
     inventory: false,
+    x: 60,
+    y: 60,
+    largeur: 30,
   },
   {
     id: 8,
     name: "verre de whisky",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Garçon ! Encore un doigt !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/VerreWhisky.png",
     alt: "verre de whisky",
     inventory: false,
+    x: 60,
+    y: 75,
+    largeur: 30,
   },
   {
     id: 9,
     name: "bouteille d'alcool",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Et un p'tit coup pour bibi à la santé de Mary !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/BouteilleAlcool.png",
     alt: "bouteille d'alcool",
     inventory: false,
+    x: 80,
+    y: 75,
+    largeur: 30,
   },
   {
     id: 10,
     name: "stéthoscope",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[BRUITS DE BATTEMENTS DE COEUR]",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/Stétoscope.png",
     alt: "stéthoscope",
     inventory: false,
+    x: 20,
+    y: 50,
+    largeur: 30,
   },
   {
     id: 11,
     name: "paquet de cartes",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "J'ai une Quinte Flush Royale. Je bluff ou pas ?",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/PaquetCarte.png",
     alt: "paquet de cartes",
     inventory: false,
+    x: 25,
+    y: 75,
+    largeur: 30,
   },
   {
     id: 12,
     name: "lunettes de soleil",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Encore ici ?",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/lunette.png",
     alt: "lunettes de soleil",
     inventory: false,
+    x: 60,
+    y: 50,
+    largeur: 30,
   },
   {
     id: 13,
@@ -492,18 +563,24 @@ const scene3 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Des dettes de jeu au nom de... Gerard Hadd... Hey, mais c'est moi, ça !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/DettesJeu.png",
     alt: "dettes de jeu",
     inventory: false,
+    x: 20,
+    y: 75,
+    largeur: 30,
   },
   {
     id: 14,
     name: "pillulier",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "NON ! PAS LES PILLULES !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/Pilulier.png",
     alt: "pillulier",
     inventory: false,
+    x: 45,
+    y: 75,
+    largeur: 30,
   },
   {
     id: 15,
@@ -511,22 +588,29 @@ const scene3 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Ils ne veulent pas me laisser tranquille... Ils nous surveillent tout le temps... TOUT LE TEMPS !!!",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene3/caméra.png",
     alt: "camera",
     inventory: false,
+    x: 70,
+    y: 40,
+    largeur: 30,
   },
 ];
 
 const scene4 = [
   // Indice 3D
   {
-    id: 1,
+    id: 300,
     name: "alliance",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[VOIX TRISTE] Mais... Mais c'est l'alliance de Mary... ? SNIF",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/alliance.png",
+    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
     alt: "alliance",
     inventory: true,
+    x: 70,
+    y: 40,
+    largeur: 30,
   },
   // Indices
   {
@@ -535,18 +619,24 @@ const scene4 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Le sac à main de Mary... Qu'est ce qu'il fait là.. Et ? Oh, il y a une note dedans... !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/Alphabet.jpg",
     alt: "sac à main de Mary",
     inventory: false,
+    x: 60,
+    y: 40,
+    largeur: 30,
   },
   {
     id: 3,
     name: "affiche murale",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "C'est quoi ce charabia sur le mur ? Je devrais m'y pencher...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/ecritureMur.png",
     alt: "affiche murale",
     inventory: false,
+    x: 30,
+    y: 40,
+    largeur: 30,
   },
   // Objets Autres
   {
@@ -554,9 +644,12 @@ const scene4 = [
     name: "cadre photo de Mary",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[VOIX TRISTE] Une photo de Mary... Elle est si belle...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/",
     alt: "cadre photo de Mary",
     inventory: false,
+    x: 20,
+    y: 40,
+    largeur: 30,
   },
   {
     id: 5,
@@ -564,9 +657,12 @@ const scene4 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Une petite partie de Poker ? Allez mise tapis... Je te suis. Mais je vais gagner... Hihihihihihihihihihihi !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/PaquetCarte.png",
     alt: "paquet de cartes",
     inventory: false,
+    x: 70,
+    y: 30,
+    largeur: 30,
   },
   {
     id: 6,
@@ -574,59 +670,78 @@ const scene4 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "EH MAIS ! Je le reconnait, lui.. c'est Abdou ! Ma peluche poulet d'enfance !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/Poulet.png",
     alt: "un poulet en peluche",
     inventory: false,
+    x: 50,
+    y: 20,
+    largeur: 30,
   },
   {
     id: 7,
     name: "un chat en peluche",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Ce chat... C'est Alex, ma peluche kitten d'un chat.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/Chat.png",
     alt: "un chat en peluche",
     inventory: false,
+    x: 70,
+    y: 10,
+    largeur: 30,
   },
   {
     id: 8,
     name: "radio",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[HURLEMENTS ET RIRES INQUIETANTS PROVENANT DE LA RADIO]",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/radio.png",
     alt: "radio",
     inventory: false,
+    x: 15,
+    y: 10,
+    largeur: 30,
   },
   {
     id: 9,
     name: "sac de jetons",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Les jetons.. Plein de jetons.. A moi...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/SacJetons.png",
     alt: "sac de jetons",
     inventory: false,
+    x: 50,
+    y: 70,
+    largeur: 30,
   },
   {
     id: 10,
     name: "caméra",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[HURLEMENT D'AGACEMENT] ARRÊTEZ DE ME REGARDER !!!",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene4/caméra.png",
     alt: "caméra",
     inventory: false,
+    x: 60,
+    y: 10,
+    largeur: 30,
   },
 ];
 
 const scene5 = [
   // Indices 3D
   {
-    id: 1,
+    id: 400,
     name: "bouquet de fleurs",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Je.. Je reconnais ces fleurs.. C'est.. SNIF C'est celles que j'ai offert à Mary avant.. Avant que.. [SANGLOTS]",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/bouquet.png",
+    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
     alt: "bouquet de fleurs",
     inventory: true,
+    x: 80,
+    y: 50,
+    largeur: 30,
   },
   // Indices
   {
@@ -635,9 +750,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "[AUDIO ETRANGE CODE: . _ _ _ _ ; . . . . _ ; . . _ _ _ ; _ _ _ _ _ ]",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/radio.png",
     alt: "radio",
     inventory: false,
+    x: 70,
+    y: 40,
+    largeur: 30,
   },
   {
     id: 3,
@@ -645,9 +763,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "La tombe de Mary... un lieu de repos éternel qui me semble si lointain. Un beau jour, je te retrouverai, douce Mary. Hein ?! Quelque chose est gravé derrière la stèle !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/tombe.png",
     alt: "tombe de Mary",
     inventory: false,
+    x: 70,
+    y: 10,
+    largeur: 30,
   },
   // Objets Autres
   {
@@ -656,9 +777,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "C'est le certificat de décès de Mary... [SANGLOTS] ... Elle me manque tellement, ma petite femme...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/certificatDece.png",
     alt: "certificat de décès de Mary Hadd",
     inventory: false,
+    x: 60,
+    y: 60,
+    largeur: 30,
   },
   {
     id: 5,
@@ -666,9 +790,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Une lettre : Cher Monsieur Hadd, nous vous informons que vous êtes désormais interdit de Casino en raison de trop nombreuses dettes de jeu... [SOUPIR] Tss quels rabats joie. J'aurais pu rembourser tout ça et faire même du profit avec un dernier poker...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/RadiéCasino.png",
     alt: "lettre d'interdiction des Casinos",
     inventory: false,
+    x: 50,
+    y: 50,
+    largeur: 30,
   },
   {
     id: 6,
@@ -676,9 +803,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "N... Non... Je le reconnaît. C'est avec cette arme que j'ai essayé... ... Je suis trop faible... J'ai tout raté.. Même ma mort, je l'ai ratée.. !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/flinge.jpg",
     alt: "pistolet",
     inventory: false,
+    x: 20,
+    y: 20,
+    largeur: 30,
   },
   {
     id: 7,
@@ -686,9 +816,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Un sac de jetons... vestige d'une époque où tout était plus beau.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/SacJetons.png",
     alt: "sac de jetons",
     inventory: false,
+    x: 80,
+    y: 80,
+    largeur: 30,
   },
   {
     id: 8,
@@ -696,9 +829,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Cette caméra... me regarde-t-elle depuis le début? Enregistre-t-elle ma descente aux enfers? Ou.. Peut-être que c'est moi qui la regade, non... ?",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/caméra.png",
     alt: "caméra de surveillance",
     inventory: false,
+    x: 25,
+    y: 25,
+    largeur: 30,
   },
   {
     id: 9,
@@ -706,18 +842,24 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Il est écrit que Monsieur Gérars Hadd est atteint de troubles psychologiques atypique et d'une addiction aux jeux... [RIRE MALSAIN] Quel nase ce Gérard ! [CRI INQUIETANT] TAIS TOI ! TAIS TOI , NE M'INSULTE PAS !",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/analyse.png",
     alt: "résultats d'analyses de psychiatrie",
     inventory: false,
+    x: 35,
+    y: 35,
+    largeur: 30,
   },
   {
     id: 10,
     name: "ballon de clown",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[HURLEMENT]",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/ballonClown.png",
     alt: "ballon de clown",
     inventory: false,
+    x: 35,
+    y: 35,
+    largeur: 30,
   },
   {
     id: 11,
@@ -725,9 +867,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "J'aimerais tant pouvoir rejouer une dernière fois... J'aimerais jouer avec Mary dans un véritable Casino...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/PaquetCarte.png",
     alt: "paquet de cartes",
     inventory: false,
+    x: 35,
+    y: 55,
+    largeur: 30,
   },
   {
     id: 12,
@@ -735,9 +880,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "La photo de mon mariage avec Mary... Mary et Gerard Hadd.. Nous avons été si heureux. Désormais, cette photo ,ne reflète que l'écho de ma propre douleur.. SNIF",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/",
     alt: "photo de mariage de Mary et Gérard",
     inventory: false,
+    x: 75,
+    y: 45,
+    largeur: 30,
   },
   {
     id: 13,
@@ -745,9 +893,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Ce stéthoscope... Ils m'examinent tous les jours... Je n'ai pas besoin de ça... Je vais bien, pourtant non.. ?",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/",
     alt: "stéthoscope",
     inventory: false,
+    x: 55,
+    y: 33,
+    largeur: 30,
   },
   {
     id: 14,
@@ -755,9 +906,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Je me souviens, maintenant... C'est la boîte de Xanax que j'ai avalée en espérant calmer mes démons intérieurs, en vain...",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/Xanax.png",
     alt: "boîte de Xanax",
     inventory: false,
+    x: 22,
+    y: 66,
+    largeur: 30,
   },
   {
     id: 15,
@@ -765,9 +919,12 @@ const scene5 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "C'est la bouteille d'alcool que j'ai vidée cette fameuse nuit dernière pour tenter d'oublier... mais rien n'a changé. Non... Rien.",
-    picture: "INSERER LE PATH DE L IMAGE",
+    picture: "/Scene5/BouteilleAlcool.png",
     alt: "bouteille d'alcool",
     inventory: false,
+    x: 59,
+    y: 66,
+    largeur: 30,
   },
 ];
 
