@@ -60,8 +60,8 @@ const scene1 = [
     alt: "jeton de poker",
     inventory: true,
     splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
-    x: 23,
-    y: 90,
+    x: 20,
+    y: 80,
     largeur: 32,
   },
   // Indices
