@@ -9,12 +9,9 @@ const port = process.env.PORT || 5000;
 app.use(cors("*"));
 app.use("/Scene1", express.static(path.join(__dirname, "./Scene1")));
 app.use("/Scene2", express.static(path.join(__dirname, "./Scene2")));
-<<<<<<< HEAD
 app.use("/Scene3", express.static(path.join(__dirname, "./Scene3")));
 app.use("/Scene4", express.static(path.join(__dirname, "./Scene4")));
 app.use("/Scene5", express.static(path.join(__dirname, "./Scene5")));
-=======
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
 
 const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
@@ -258,22 +255,12 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
-<<<<<<< HEAD
-    picture: "/Scene2/sucre.png",
-    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
-    alt: "sucre d'orge",
-    inventory: true,
-    x: 15,
-    y: 15,
-    largeur: 40,
-=======
     picture: "",
     alt: "sucre d'orge",
     inventory: true,
     x: 23,
     y: 90,
     largeur: 32,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
   },
   // Indice
   {
@@ -281,21 +268,12 @@ const scene2 = [
     name: "roulette",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Tiens ? Cette roulette semble différente de tout à l'heure...",
-<<<<<<< HEAD
-    picture: "/Scene2/roulette.png",
-    alt: "roulette",
-    inventory: false,
-    x: 50,
-    y: 50,
-    largeur: 30,
-=======
     picture: "/Scene1/roulette.png",
     alt: "roulette",
     inventory: false,
     x: 61,
     y: 50,
     largeur: 150,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
   },
   //  Objets Autres
   {
@@ -307,13 +285,8 @@ const scene2 = [
     picture: "/Scene2/lunette.png",
     alt: "lunettes de soleil fashion",
     inventory: false,
-<<<<<<< HEAD
-    x: 20,
-    y: 20,
-=======
     x: 63.5,
     y: 74.35,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
     largeur: 30,
   },
   {
@@ -326,11 +299,7 @@ const scene2 = [
     alt: "cigare",
     inventory: false,
     x: 30,
-<<<<<<< HEAD
-    y: 30,
-=======
     y: 70,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
     largeur: 30,
   },
   {
@@ -341,13 +310,8 @@ const scene2 = [
     picture: "/Scene2/radio.png",
     alt: "radio",
     inventory: false,
-<<<<<<< HEAD
-    x: 40,
-    y: 40,
-=======
     x: 56,
     y: 49,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
     largeur: 30,
   },
   {
@@ -356,28 +320,6 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Une panne.. ça arrive à tout le monde ! [RIRES] Plus sérieusement, c'est un peu vétuste ici, non ?",
-<<<<<<< HEAD
-    picture: "/Scene2/EnPanne.png",
-    alt: "panneau où il est écrit EN PANNE",
-    inventory: false,
-    x: 50,
-    y: 50,
-    largeur: 30,
-  },
-  {
-    id: 7,
-    name: "lumière vascillante",
-    sound: "INSERER LE PATH DE L AUDIO",
-    subtitles:
-      "[VOIX TREMBLANTE] Eh ! M'sieur l'personnel... ? Il faut changer les ampoules... hein... ? J'ai peur du noir, moi...",
-    picture: "/",
-    alt: "lumière vascillante",
-    inventory: false,
-    x: 60,
-    y: 60,
-    largeur: 30,
-  },
-=======
     picture: "/Scene2/en panne.png",
     alt: "panneau où il est écrit EN PANNE",
     inventory: false,
@@ -398,7 +340,6 @@ const scene2 = [
   //   y: 55,
   //   largeur: 20,
   // },
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
   {
     id: 8,
     name: "plante fânée",
@@ -407,13 +348,8 @@ const scene2 = [
     picture: "/Scene2/PlanteFanée.png",
     alt: "plante fânée",
     inventory: false,
-<<<<<<< HEAD
-    x: 70,
-    y: 70,
-=======
     x: 49,
     y: 82,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
     largeur: 30,
   },
   {
@@ -424,13 +360,8 @@ const scene2 = [
     picture: "/Scene2/Scuplture.png",
     alt: "sculpture étrange",
     inventory: false,
-<<<<<<< HEAD
-    x: 80,
-    y: 80,
-=======
     x: 45,
     y: 60,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
     largeur: 30,
   },
   {
@@ -441,15 +372,9 @@ const scene2 = [
     picture: "/Scene2/TableauPenché.png",
     alt: "tableau d'un as de pique pas droit",
     inventory: false,
-<<<<<<< HEAD
-    x: 60,
-    y: 80,
-    largeur: 30,
-=======
     x: 79,
     y: 35,
     largeur: 40,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
   },
   {
     id: 11,
@@ -459,45 +384,21 @@ const scene2 = [
     picture: "/Scene2/VerreWhisky.png",
     alt: "verre de whisky",
     inventory: false,
-<<<<<<< HEAD
-    x: 45,
-    y: 70,
-    largeur: 30,
-=======
     x: 40,
     y: 52,
     largeur: 20,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
   },
   {
     id: 12,
     name: "caméra",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "... Ils nous observent.",
-<<<<<<< HEAD
-    picture: "/Scene2/caméra.png",
-=======
     picture: "/Scene1/caméra.png",
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
     alt: "caméra",
     inventory: false,
     x: 65,
     y: 35,
     largeur: 30,
-<<<<<<< HEAD
-=======
-  },
-  {
-    id: 13,
-    name: "cadenas",
-    picture: "/Scene1/padlock-303266_1280.png",
-    alt: "caméra",
-    code: 679108092,
-    inventory: false,
-    x: 47,
-    y: 50,
-    largeur: 25,
->>>>>>> 102a500b770874d54c248bcfb095964f93362dfc
   },
 ];
 
