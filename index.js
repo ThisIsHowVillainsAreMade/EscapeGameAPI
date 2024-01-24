@@ -81,6 +81,7 @@ const scene1 = [
     x: 30,
     y: 65,
     largeur: 25,
+    indice: true,
   },
   {
     id: 3,
@@ -93,6 +94,7 @@ const scene1 = [
     x: 79.5,
     y: 55,
     largeur: 30,
+    indice: true,
   },
   {
     id: 4,
@@ -105,6 +107,7 @@ const scene1 = [
     x: 25,
     y: 65,
     largeur: 30,
+    indice: true,
   },
   {
     id: 5,
@@ -118,6 +121,7 @@ const scene1 = [
     x: 75,
     y: 70,
     largeur: 25,
+    indice: true,
   },
   // Objets Autres
   {
@@ -131,6 +135,7 @@ const scene1 = [
     x: 65,
     y: 35,
     largeur: 23,
+    indice: false,
   },
   {
     id: 7,
@@ -144,6 +149,7 @@ const scene1 = [
     x: 40,
     y: 55.5,
     largeur: 22,
+    indice: false,
   },
   {
     id: 8,
@@ -157,6 +163,7 @@ const scene1 = [
     x: 67,
     y: 56,
     largeur: 32,
+    indice: false,
   },
   {
     id: 9,
@@ -170,6 +177,7 @@ const scene1 = [
     x: 50,
     y: 75,
     largeur: 30,
+    indice: false,
   },
   {
     id: 10,
@@ -183,6 +191,7 @@ const scene1 = [
     x: 85,
     y: 34.4,
     largeur: 35,
+    indice: false,
   },
   {
     id: 11,
@@ -196,6 +205,7 @@ const scene1 = [
     x: 38,
     y: 45,
     largeur: 30,
+    indice: false,
   },
   {
     id: 12,
@@ -209,6 +219,7 @@ const scene1 = [
     x: 60,
     y: 65,
     largeur: 30,
+    indice: false,
   },
   {
     id: 13,
@@ -221,6 +232,7 @@ const scene1 = [
     x: 71.1,
     y: 63,
     largeur: 110,
+    indice: false,
   },
   {
     id: 14,
@@ -233,6 +245,7 @@ const scene1 = [
     x: 17,
     y: 60.8,
     largeur: 35,
+    indice: false,
   },
   {
     id: 15,
@@ -244,6 +257,7 @@ const scene1 = [
     x: 51.9,
     y: 51.5,
     largeur: 25,
+    indice: false,
   },
 ];
 
@@ -255,11 +269,12 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
-    picture: "",
+    picture: "/Scene2/sucre.png",
+    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
     alt: "sucre d'orge",
     inventory: true,
     x: 23,
-    y: 90,
+    y: 60,
     largeur: 32,
   },
   // Indice
@@ -274,6 +289,7 @@ const scene2 = [
     x: 61,
     y: 50,
     largeur: 150,
+    indice: true,
   },
   //  Objets Autres
   {
@@ -320,7 +336,7 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Une panne.. ça arrive à tout le monde ! [RIRES] Plus sérieusement, c'est un peu vétuste ici, non ?",
-    picture: "/Scene2/en panne.png",
+    picture: "/Scene2/EnPanne.png",
     alt: "panneau où il est écrit EN PANNE",
     inventory: false,
     x: 75,
@@ -357,7 +373,7 @@ const scene2 = [
     name: "sculpture étrange",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Je crois que je ne comprendrais jamais l'art.",
-    picture: "/Scene2/Scuplture.png",
+    picture: "/Scene2/Sculpture.png",
     alt: "sculpture étrange",
     inventory: false,
     x: 45,
@@ -399,6 +415,7 @@ const scene2 = [
     x: 65,
     y: 35,
     largeur: 30,
+    indice: true,
   },
 ];
 
@@ -431,6 +448,7 @@ const scene3 = [
     x: 20,
     y: 35,
     largeur: 30,
+    indice: true,
   },
   {
     id: 3,
@@ -444,6 +462,7 @@ const scene3 = [
     x: 30,
     y: 35,
     largeur: 30,
+    indice: true,
   },
   {
     id: 4,
@@ -456,6 +475,7 @@ const scene3 = [
     x: 50,
     y: 75,
     largeur: 30,
+    indice: true,
   },
   {
     id: 5,
@@ -469,6 +489,7 @@ const scene3 = [
     x: 75,
     y: 70,
     largeur: 30,
+    indice: true,
   },
   // Objets Autres
   {
@@ -624,6 +645,7 @@ const scene4 = [
     x: 60,
     y: 40,
     largeur: 30,
+    indice: true,
   },
   {
     id: 3,
@@ -636,6 +658,7 @@ const scene4 = [
     x: 30,
     y: 40,
     largeur: 30,
+    indice: true,
   },
   // Objets Autres
   {
@@ -755,6 +778,7 @@ const scene5 = [
     x: 70,
     y: 40,
     largeur: 30,
+    indice: true,
   },
   {
     id: 3,
@@ -768,6 +792,7 @@ const scene5 = [
     x: 70,
     y: 10,
     largeur: 30,
+    indice: true,
   },
   // Objets Autres
   {
