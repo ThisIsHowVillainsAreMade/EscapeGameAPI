@@ -16,7 +16,8 @@ const narration = [
     subtitles2: "'Je ne me rappelle de rien.'",
     subtitles3: "'Pourquoi je suis dans un casino ?'",
     subtitles4: "'La salle me semble étrange, je n'y vois qu'une seule porte.'",
-    subtitles5: "'Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.'",
+    subtitles5:
+      "'Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.'",
     subtitles6: "'Dans quelle galère je me suis fourré...'",
   },
   // Après la salle 1, avant la salle 2.
@@ -87,7 +88,7 @@ const scene1 = [
   {
     id: 2,
     name: "montre luxueuse",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "./assets/audios/issou_6xYAXwo.mp3",
     subtitles: "Cette montre est arrêtée sur 10H10. Etrange...",
     picture: "INSERER LE PATH DE L IMAGE",
     alt: "montre luxueuse",
@@ -96,7 +97,7 @@ const scene1 = [
   {
     id: 3,
     name: "badge de sécurité",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "./assets/audios/oh-alerte-au-gogol_CkdeC6s.mp3",
     subtitles: "Oh ! Un badge de sécurité. Il s'agit du numéro 809.",
     picture: "INSERER LE PATH DE L IMAGE",
     alt: "badge de sécurité",
