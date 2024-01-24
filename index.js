@@ -12,6 +12,8 @@ app.use("/Scene2", express.static(path.join(__dirname, "./Scene2")));
 app.use("/Scene3", express.static(path.join(__dirname, "./Scene3")));
 app.use("/Scene4", express.static(path.join(__dirname, "./Scene4")));
 app.use("/Scene5", express.static(path.join(__dirname, "./Scene5")));
+app.use("/static", express.static("assets"));
+// app.use("/assets", express.static(path.join(__dirname, "/audio")));
 
 const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
@@ -73,7 +75,7 @@ const scene1 = [
   {
     id: 2,
     name: "montre luxueuse",
-    sound: "./assets/audios/issou_6xYAXwo.mp3", // TEST
+    sound: "static/audios/issou.mp3", // TEST
     subtitles: "Cette montre est arrêtée sur 10H10. Etrange...",
     picture: "/Scene1/montre10.png",
     alt: "montre luxueuse",
