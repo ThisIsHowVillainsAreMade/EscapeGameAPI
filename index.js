@@ -81,6 +81,7 @@ const scene1 = [
     x: 27,
     y: 65,
     largeur: 28,
+    indice: true,
   },
   {
     id: 3,
@@ -93,6 +94,7 @@ const scene1 = [
     x: 72,
     y: 63,
     largeur: 30,
+    indice: true,
   },
   {
     id: 4,
@@ -105,6 +107,7 @@ const scene1 = [
     x: 25,
     y: 65,
     largeur: 23,
+    indice: true,
   },
   {
     id: 5,
@@ -118,6 +121,7 @@ const scene1 = [
     x: 82,
     y: 71,
     largeur: 25,
+    indice: true,
   },
   // Objets Autres
   {
@@ -131,6 +135,7 @@ const scene1 = [
     x: 65,
     y: 35,
     largeur: 23,
+    indice: false,
   },
   {
     id: 7,
@@ -144,6 +149,7 @@ const scene1 = [
     x: 40,
     y: 55.5,
     largeur: 22,
+    indice: false,
   },
   {
     id: 8,
@@ -157,6 +163,7 @@ const scene1 = [
     x: 72,
     y: 56,
     largeur: 32,
+    indice: false,
   },
   {
     id: 9,
@@ -183,6 +190,7 @@ const scene1 = [
     x: 92,
     y: 34.5,
     largeur: 35,
+    indice: false,
   },
   {
     id: 11,
@@ -196,6 +204,7 @@ const scene1 = [
     x: 38,
     y: 45,
     largeur: 30,
+    indice: false,
   },
   {
     id: 12,
@@ -209,6 +218,7 @@ const scene1 = [
     x: 60,
     y: 65,
     largeur: 30,
+    indice: false,
   },
   {
     id: 13,
@@ -221,6 +231,7 @@ const scene1 = [
     x: 74.7,
     y: 63,
     largeur: 110,
+    indice: false,
   },
   {
     id: 14,
@@ -244,6 +255,7 @@ const scene1 = [
     x: 52.3,
     y: 51.5,
     largeur: 25,
+    indice: false,
   },
 ];
 
@@ -261,6 +273,8 @@ const scene2 = [
     x: 62,
     y: 65,
     largeur: 40,
+    splineUrl: "https://prod.spline.design/nZVPf8N8YanFoqhn/scene.splinecode",
+
   },
   // Indice
   {
@@ -274,6 +288,7 @@ const scene2 = [
     x: 68,
     y: 54,
     largeur: 85,
+    indice: true,
   },
   //  Objets Autres
   {
@@ -320,7 +335,7 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Une panne.. ça arrive à tout le monde ! [RIRES] Plus sérieusement, c'est un peu vétuste ici, non ?",
-    picture: "/Scene2/enPanne.png",
+    picture: "/Scene2/EnPanne.png",
     alt: "panneau où il est écrit EN PANNE",
     inventory: false,
     x: 75,
@@ -399,6 +414,18 @@ const scene2 = [
     x: 65,
     y: 35,
     largeur: 30,
+    indice: true,
+  },
+  {
+    id: 15,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "Quinte flush royale",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
   },
 ];
 
@@ -411,7 +438,7 @@ const scene3 = [
     subtitles:
       "Je suis pas fan de ce genre de technologies... Pour autant, celui-ci semble différent.",
     picture: "/Scene3/thermometre.png",
-    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    splineUrl: "https://prod.spline.design/ikl9LuKio4ff063r/scene.splinecode",
     alt: "thermomètre digital",
     inventory: true,
     x: 65,
@@ -431,6 +458,7 @@ const scene3 = [
     x: 20,
     y: 35,
     largeur: 30,
+    indice: true,
   },
   {
     id: 3,
@@ -444,6 +472,7 @@ const scene3 = [
     x: 30,
     y: 35,
     largeur: 30,
+    indice: true,
   },
   {
     id: 4,
@@ -456,6 +485,7 @@ const scene3 = [
     x: 50,
     y: 75,
     largeur: 30,
+    indice: true,
   },
   {
     id: 5,
@@ -469,6 +499,7 @@ const scene3 = [
     x: 75,
     y: 70,
     largeur: 30,
+    indice: true,
   },
   // Objets Autres
   {
@@ -594,6 +625,17 @@ const scene3 = [
     y: 40,
     largeur: 30,
   },
+  {
+    id: 16,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "Psychiatrie",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
+  },
 ];
 
 const scene4 = [
@@ -604,7 +646,7 @@ const scene4 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[VOIX TRISTE] Mais... Mais c'est l'alliance de Mary... ? SNIF",
     picture: "/Scene4/alliance.png",
-    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    splineUrl: "https://prod.spline.design/AqJQTyW7yiQYWQ2d/scene.splinecode",
     alt: "alliance",
     inventory: true,
     x: 70,
@@ -624,6 +666,7 @@ const scene4 = [
     x: 60,
     y: 40,
     largeur: 30,
+    indice: true,
   },
   {
     id: 3,
@@ -636,6 +679,7 @@ const scene4 = [
     x: 30,
     y: 40,
     largeur: 30,
+    indice: true,
   },
   // Objets Autres
   {
@@ -724,6 +768,17 @@ const scene4 = [
     y: 10,
     largeur: 30,
   },
+  {
+    id: 15,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "DESCENTE AUX ENFERS",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
+  },
 ];
 
 const scene5 = [
@@ -735,7 +790,7 @@ const scene5 = [
     subtitles:
       "Je.. Je reconnais ces fleurs.. C'est.. SNIF C'est celles que j'ai offert à Mary avant.. Avant que.. [SANGLOTS]",
     picture: "/Scene5/bouquet.png",
-    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    splineUrl: "https://prod.spline.design/0BHRL1GB1ewQkGAw/scene.splinecode",
     alt: "bouquet de fleurs",
     inventory: true,
     x: 80,
@@ -755,6 +810,7 @@ const scene5 = [
     x: 70,
     y: 40,
     largeur: 30,
+    indice: true,
   },
   {
     id: 3,
@@ -768,6 +824,7 @@ const scene5 = [
     x: 70,
     y: 10,
     largeur: 30,
+    indice: true,
   },
   // Objets Autres
   {
@@ -924,6 +981,17 @@ const scene5 = [
     x: 59,
     y: 66,
     largeur: 30,
+  },
+  {
+    id: 16,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "Quinte flush royale",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
   },
 ];
 
