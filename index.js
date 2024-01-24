@@ -59,7 +59,7 @@ const scene1 = [
   {
     id: 1,
     name: "jeton",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "./Scene1/audio/frapper-porte.mp3",
     subtitles: "Mhm... Je devrais peut-être regarder ce jeton de plus près.",
     picture: "/Scene1/Jeton.png",
     alt: "jeton de poker",
@@ -85,7 +85,7 @@ const scene1 = [
   {
     id: 3,
     name: "badge de sécurité",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "/Scene1/audio/porte.wav",
     subtitles: "Oh ! Un badge de sécurité. Il s'agit du numéro 809.",
     picture: "/Scene1/badge809.png",
     alt: "badge de sécurité",
@@ -255,12 +255,12 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
-    picture: "",
+    picture: "/Scene2/sucre.png",
     alt: "sucre d'orge",
     inventory: true,
-    x: 23,
-    y: 90,
-    largeur: 32,
+    x: 62,
+    y: 65,
+    largeur: 40,
   },
   // Indice
   {
@@ -271,9 +271,9 @@ const scene2 = [
     picture: "/Scene1/roulette.png",
     alt: "roulette",
     inventory: false,
-    x: 61,
-    y: 50,
-    largeur: 150,
+    x: 68,
+    y: 54,
+    largeur: 85,
   },
   //  Objets Autres
   {
@@ -285,9 +285,9 @@ const scene2 = [
     picture: "/Scene2/lunette.png",
     alt: "lunettes de soleil fashion",
     inventory: false,
-    x: 63.5,
-    y: 74.35,
-    largeur: 30,
+    x: 82,
+    y: 70.5,
+    largeur: 25,
   },
   {
     id: 4,
@@ -310,9 +310,9 @@ const scene2 = [
     picture: "/Scene2/radio.png",
     alt: "radio",
     inventory: false,
-    x: 56,
-    y: 49,
-    largeur: 30,
+    x: 61,
+    y: 64,
+    largeur: 50,
   },
   {
     id: 6,
@@ -320,7 +320,7 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Une panne.. ça arrive à tout le monde ! [RIRES] Plus sérieusement, c'est un peu vétuste ici, non ?",
-    picture: "/Scene2/en panne.png",
+    picture: "/Scene2/enPanne.png",
     alt: "panneau où il est écrit EN PANNE",
     inventory: false,
     x: 75,
@@ -357,7 +357,7 @@ const scene2 = [
     name: "sculpture étrange",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "Je crois que je ne comprendrais jamais l'art.",
-    picture: "/Scene2/Scuplture.png",
+    picture: "/Scene2/Sculpture.png",
     alt: "sculpture étrange",
     inventory: false,
     x: 45,
