@@ -73,7 +73,7 @@ const scene1 = [
   {
     id: 2,
     name: "montre luxueuse",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "./assets/audios/issou_6xYAXwo.mp3", // TEST
     subtitles: "Cette montre est arrêtée sur 10H10. Etrange...",
     picture: "/Scene1/montre10.png",
     alt: "montre luxueuse",
