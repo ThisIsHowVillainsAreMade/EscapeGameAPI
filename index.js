@@ -255,7 +255,7 @@ const scene2 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
-    picture: "",
+    picture: "/Scene2/sucre.png",
     alt: "sucre d'orge",
     inventory: true,
     x: 23,
@@ -399,6 +399,17 @@ const scene2 = [
     x: 65,
     y: 35,
     largeur: 30,
+  },
+  {
+    id: 15,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "Quinte flush royale",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
   },
 ];
 
@@ -594,6 +605,17 @@ const scene3 = [
     y: 40,
     largeur: 30,
   },
+  {
+    id: 16,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "Psychiatrie",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
+  },
 ];
 
 const scene4 = [
@@ -723,6 +745,17 @@ const scene4 = [
     x: 60,
     y: 10,
     largeur: 30,
+  },
+  {
+    id: 15,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "DESCENTE AUX ENFERS",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
   },
 ];
 
@@ -924,6 +957,17 @@ const scene5 = [
     x: 59,
     y: 66,
     largeur: 30,
+  },
+  {
+    id: 16,
+    name: "cadenas",
+    picture: "/Scene1/padlock-303266_1280.png",
+    alt: "cadenas",
+    code: "Quinte flush royale",
+    inventory: false,
+    x: 51.9,
+    y: 51.5,
+    largeur: 25,
   },
 ];
 
