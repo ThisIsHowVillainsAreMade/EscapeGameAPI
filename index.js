@@ -73,7 +73,7 @@ const scene1 = [
   {
     id: 2,
     name: "montre luxueuse",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "./assets/audios/issou_6xYAXwo.mp3", // TEST
     subtitles: "Cette montre est arrêtée sur 10H10. Etrange...",
     picture: "/Scene1/montre10.png",
     alt: "montre luxueuse",
@@ -85,7 +85,7 @@ const scene1 = [
   {
     id: 3,
     name: "badge de sécurité",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "./assets/audios/oh-alerte-au-gogol_CkdeC6s.mp3", //TEST AUSSI
     subtitles: "Oh ! Un badge de sécurité. Il s'agit du numéro 809.",
     picture: "/Scene1/badge809.png",
     alt: "badge de sécurité",
@@ -256,6 +256,7 @@ const scene2 = [
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
     picture: "/Scene2/sucre.png",
+    splineUrl: "https://prod.spline.design/nZVPf8N8YanFoqhn/scene.splinecode",
     alt: "sucre d'orge",
     inventory: true,
     x: 23,
@@ -422,7 +423,7 @@ const scene3 = [
     subtitles:
       "Je suis pas fan de ce genre de technologies... Pour autant, celui-ci semble différent.",
     picture: "/Scene3/thermometre.png",
-    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    splineUrl: "https://prod.spline.design/ikl9LuKio4ff063r/scene.splinecode",
     alt: "thermomètre digital",
     inventory: true,
     x: 65,
@@ -626,7 +627,7 @@ const scene4 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles: "[VOIX TRISTE] Mais... Mais c'est l'alliance de Mary... ? SNIF",
     picture: "/Scene4/alliance.png",
-    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    splineUrl: "https://prod.spline.design/AqJQTyW7yiQYWQ2d/scene.splinecode",
     alt: "alliance",
     inventory: true,
     x: 70,
@@ -768,7 +769,7 @@ const scene5 = [
     subtitles:
       "Je.. Je reconnais ces fleurs.. C'est.. SNIF C'est celles que j'ai offert à Mary avant.. Avant que.. [SANGLOTS]",
     picture: "/Scene5/bouquet.png",
-    splineUrl: "https://prod.spline.design/be8BmFnRYQfM04Ba/scene.splinecode",
+    splineUrl: "https://prod.spline.design/0BHRL1GB1ewQkGAw/scene.splinecode",
     alt: "bouquet de fleurs",
     inventory: true,
     x: 80,
