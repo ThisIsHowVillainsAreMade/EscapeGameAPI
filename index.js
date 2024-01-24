@@ -237,6 +237,7 @@ const scene1 = [
   {
     id: 15,
     name: "cadenas",
+    subtitles:"Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: 679108092,
@@ -404,6 +405,8 @@ const scene2 = [
   {
     id: 15,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Quinte flush royale",
@@ -609,6 +612,8 @@ const scene3 = [
   {
     id: 16,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Psychiatrie",
@@ -750,6 +755,8 @@ const scene4 = [
   {
     id: 15,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "DESCENTE AUX ENFERS",
@@ -962,6 +969,8 @@ const scene5 = [
   {
     id: 16,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Quinte flush royale",
