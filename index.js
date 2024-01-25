@@ -281,6 +281,7 @@ const scene1 = [
     y: 51.5,
     largeur: 25,
     indice: false,
+    dechiffrage: "_ _ _ - _ _ - _ _ _ - _"
   },
 ];
 
@@ -312,6 +313,8 @@ const scene2 = [
     y: 54,
     largeur: 85,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene2/Alberti.png",
   },
   //  Objets Autres
   {
@@ -450,6 +453,7 @@ const scene2 = [
     x: 51.9,
     y: 51.5,
     largeur: 25,
+    dechiffrage: "qjx ojzc xtsy kfnyx"
   },
 ];
 
@@ -483,6 +487,8 @@ const scene3 = [
     y: 35,
     largeur: 30,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   {
     id: 3,
@@ -497,6 +503,8 @@ const scene3 = [
     y: 35,
     largeur: 30,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   {
     id: 4,
@@ -510,6 +518,8 @@ const scene3 = [
     y: 75,
     largeur: 30,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   {
     id: 5,
@@ -524,6 +534,8 @@ const scene3 = [
     y: 70,
     largeur: 30,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   // Objets Autres
   {
@@ -660,6 +672,7 @@ const scene3 = [
     x: 51.9,
     y: 51.5,
     largeur: 25,
+    dechiffrage: "/Scene3/Pigpen.png",
   },
 ];
 
@@ -692,6 +705,8 @@ const scene4 = [
     y: 40,
     largeur: 30,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/tripoli.png",
   },
   {
     id: 3,
@@ -705,6 +720,8 @@ const scene4 = [
     y: 40,
     largeur: 30,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/tripoli.png",
   },
   // Objets Autres
   {
@@ -804,6 +821,7 @@ const scene4 = [
     x: 51.9,
     y: 51.5,
     largeur: 25,
+    dechiffrage: "45135525 136 556591"
   },
 ];
 
@@ -865,6 +883,8 @@ const scene5 = [
     x: 60,
     y: 60,
     largeur: 30,
+    decryptage: true,
+    imgSrc: "/Scene5/morse.png",
   },
   {
     id: 5,
