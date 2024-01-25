@@ -450,6 +450,7 @@ const scene2 = [
     x: 46.95,
     y: 47.7,
     largeur: 20,
+    dechiffrage: "qjx ojzc xtsy kfnyx"
   },
 ];
 
