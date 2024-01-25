@@ -13,18 +13,20 @@ app.use("/Scene3", express.static(path.join(__dirname, "./Scene3")));
 app.use("/Scene4", express.static(path.join(__dirname, "./Scene4")));
 app.use("/Scene5", express.static(path.join(__dirname, "./Scene5")));
 app.use("/static", express.static("assets"));
+app.use("/static1", express.static("audiosMP3"));
 // app.use("/assets", express.static(path.join(__dirname, "/audio")));
 
 const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
   {
     id: 1,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "",
     subtitles1: "Aie.. Ma tête… Mais.. ?! Où je suis là ?",
     subtitles2: "Je ne me rappelle de rien.",
     subtitles3: "Pourquoi je suis dans un casino ?",
     subtitles4: "La salle me semble étrange, je n'y vois qu'une seule porte.",
-    subtitles5: "Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.",
+    subtitles5:
+      "Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.",
     subtitles6: "Dans quelle galère je me suis fourré...",
   },
   // Après la salle 1, avant la salle 2.
@@ -83,7 +85,7 @@ const scene1 = [
   {
     id: 1,
     name: "jeton",
-    sound: "./Scene1/audio/frapper-porte.mp3",
+    sound: "static1/scene1/sc1id1.mp3",
     subtitles: "Mhm... Je devrais peut-être regarder ce jeton de plus près.",
     picture: "/Scene1/Jeton.png",
     alt: "jeton de poker",
@@ -97,7 +99,7 @@ const scene1 = [
   {
     id: 2,
     name: "montre luxueuse",
-    sound: "static/audios/issou.mp3", // TEST
+    sound: "static1/scene1/sc1id2.mp3", // TEST
     subtitles: "Cette montre est arrêtée sur 10H10. Etrange...",
     picture: "/Scene1/montre10.png",
     alt: "montre luxueuse",
@@ -110,7 +112,7 @@ const scene1 = [
   {
     id: 3,
     name: "badge de sécurité",
-    sound: "/Scene1/audio/porte.wav",
+    sound: "static1/scene1/sc1id3.mp3",
     subtitles: "Oh ! Un badge de sécurité. Il s'agit du numéro 809.",
     picture: "/Scene1/badge809.png",
     alt: "badge de sécurité",
@@ -123,7 +125,7 @@ const scene1 = [
   {
     id: 4,
     name: "clef de machine à sous",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id4.mp3",
     subtitles: "Cette clef permet d'ouvrir la machine à sous numéro 679.",
     picture: "/Scene1/clé679.png",
     alt: "clef de machine à sous",
@@ -136,7 +138,7 @@ const scene1 = [
   {
     id: 5,
     name: "dé truqué",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id5.mp3",
     subtitles:
       "Ce dé n’est pas comme les autres. Il semble truqué pour tomber perpétuellement sur le 2.",
     picture: "/Scene1/dé.png",
@@ -151,7 +153,7 @@ const scene1 = [
   {
     id: 6,
     name: "caméra",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id6.mp3",
     subtitles: "J'ai comme l'impression d'être observé...",
     picture: "/Scene1/caméra.png",
     alt: "caméra",
@@ -164,7 +166,7 @@ const scene1 = [
   {
     id: 7,
     name: "cendrier contenant un cigare",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id7.mp3",
     subtitles:
       "KOF ! KOF ! Berk ! Ce cendrier contient un cigare encore fumant. Oh non, elles sont toutes noires maintenant ! Pourquoi j'ai mis les mains dedans, moi...",
     picture: "/Scene1/CendierCigare.png",
@@ -178,7 +180,7 @@ const scene1 = [
   {
     id: 8,
     name: "sac de jetons",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id8.mp3",
     subtitles:
       "Il y a un bon paquet de jetons là-dedans... Ce sac sera bientôt à moi et.. ET JE SERAIS RIIIICHE ! MOUHIHAHAHAHAHA !",
     picture: "/Scene1/SacJetons.png",
@@ -192,7 +194,7 @@ const scene1 = [
   {
     id: 9,
     name: "billets de banque",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id9.mp3",
     subtitles:
       "Il faut que je remporte ces billets... Ca épongerai un peu mes dettes. Sinon, je pourrais aussi les rejouer pour gagner plus ? Oui. Bonne idée, je vais faire ça !",
     picture: "/Scene1/BilletBanque.png",
@@ -205,7 +207,7 @@ const scene1 = [
   {
     id: 10,
     name: "bouteille d'alcool fort",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id10.mp3",
     subtitles:
       "Voyons voir.. que dit l'étiquette ? QUOI ? 90 DEGRES ? MAIS C'EST DU GEL HYDRO, PAS DE L'ALCOOL !",
     picture: "/Scene1/BouteilleAlcool.png",
@@ -219,7 +221,7 @@ const scene1 = [
   {
     id: 11,
     name: "verre à cocktail",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id11.mp3",
     subtitles:
       "Un sex on the beach, oh yeah baby.. ! Ahah, je devrais en commander un pour Mary. Elle adore ça.",
     picture: "/Scene1/VerreCocktail.png",
@@ -233,7 +235,7 @@ const scene1 = [
   {
     id: 12,
     name: "livre de comptes du casino",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id12.mp3",
     subtitles:
       "WOAAAAAW LES ENFOIRES ! Ils brassent un max ! Le livre de compte parle de lui-même !",
     picture: "/Scene1/livreCompte.png",
@@ -247,7 +249,7 @@ const scene1 = [
   {
     id: 13,
     name: "roulette",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id13.mp3",
     subtitles: "Gagner à la roulette pourrait me sortir de la merde !",
     picture: "/Scene1/roulette.png",
     alt: "roulette",
@@ -260,7 +262,7 @@ const scene1 = [
   {
     id: 14,
     name: "boîte de Xanax",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene1/sc1id14.mp3",
     subtitles: "Un Xanax et ça repart !",
     picture: "/Scene1/Xanax.png",
     alt: "boîte de Xanax",
@@ -273,6 +275,7 @@ const scene1 = [
     id: 15,
     name: "cadenas",
     subtitles: "Je devrais encore continuer d'explorer la salle...",
+    sound: "static1/scene1/sc1id15.mp3",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: 679108092,
@@ -289,7 +292,7 @@ const scene2 = [
   {
     id: 100,
     name: "canne",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id1.mp3",
     subtitles: "...Mmmmmh.. Une vieille canne ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
     picture: "/Scene2/sucre.png",
     alt: "canne",
@@ -303,21 +306,23 @@ const scene2 = [
   {
     id: 2,
     name: "roulette",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id2.mp3",
     subtitles: "Tiens ? Cette roulette semble différente de tout à l'heure...",
     picture: "/Scene1/roulette.png",
+    splineUrl: "/Scene2/roulette.png",
     alt: "roulette",
     inventory: false,
     x: 68,
     y: 54,
     largeur: 85,
     indice: true,
+    decript: true,
   },
   //  Objets Autres
   {
     id: 3,
     name: "lunettes de soleil fashion",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id3.mp3",
     subtitles:
       "On dirait celles de Mary. Ca signifie qu'elle est ici ?! Oh non, elle ne doit pas me voir ici !",
     picture: "/Scene2/lunette.png",
@@ -330,7 +335,7 @@ const scene2 = [
   {
     id: 4,
     name: "cigare",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id4.mp3",
     subtitles:
       "Ma parole, ils fument tous le cigare ici ou quoi ? Et puis, je croyais que c'était devenu interdit dans les lieux publics ! Orh !",
     picture: "/Scene2/cigare.png",
@@ -343,7 +348,7 @@ const scene2 = [
   {
     id: 5,
     name: "radio",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id5.mp3",
     subtitles: "[MUSIQUE ENFANTINE]",
     picture: "/Scene2/radio.png",
     alt: "radio",
@@ -355,7 +360,7 @@ const scene2 = [
   {
     id: 6,
     name: "panneau où il est écrit EN PANNE",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id6.mp3",
     subtitles:
       "Une panne.. ça arrive à tout le monde ! [RIRES] Plus sérieusement, c'est un peu vétuste ici, non ?",
     picture: "/Scene2/EnPanne.png",
@@ -368,7 +373,7 @@ const scene2 = [
   // {
   //   id: 7,
   //   name: "lumière vascillante",
-  //   sound: "INSERER LE PATH DE L AUDIO",
+  //   sound: "static1/scene2/sc2id7.mp3",
   //   subtitles:
   //     "[VOIX TREMBLANTE] Eh ! M'sieur l'personnel... ? Il faut changer les ampoules... hein... ? J'ai peur du noir, moi...",
   //   picture: "INSERER LE PATH DE L IMAGE",
@@ -381,7 +386,7 @@ const scene2 = [
   {
     id: 8,
     name: "plante fânée",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id8.mp3",
     subtitles: "pauvre plante ...",
     picture: "/Scene2/PlanteFanée.png",
     alt: "plante fânée",
@@ -393,7 +398,7 @@ const scene2 = [
   {
     id: 9,
     name: "sculpture étrange",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id9.mp3",
     subtitles: "Je crois que je ne comprendrais jamais l'art.",
     picture: "/Scene2/Sculpture.png",
     alt: "sculpture étrange",
@@ -405,7 +410,7 @@ const scene2 = [
   {
     id: 10,
     name: "tableau de l'as de pique",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id10.mp3",
     subtitles: "Argh ! Rien de plus stressant qu'un tableau pas droit !",
     picture: "/Scene2/TableauPenché.png",
     alt: "tableau d'un as de pique pas droit",
@@ -417,7 +422,7 @@ const scene2 = [
   {
     id: 11,
     name: "verre de whisky",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id11.mp3",
     subtitles: "Mettez moi juste un doigt !",
     picture: "/Scene2/VerreWhisky.png",
     alt: "verre de whisky",
@@ -429,7 +434,7 @@ const scene2 = [
   {
     id: 12,
     name: "caméra",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene2/sc2id12.mp3",
     subtitles: "... Ils nous observent.",
     picture: "/Scene1/caméra.png",
     alt: "caméra",
@@ -444,6 +449,7 @@ const scene2 = [
     name: "cadenas",
     subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
+    sound: "static1/scene2/sc2id15.mp3",
     alt: "cadenas",
     code: "Quinte flush royale",
     inventory: false,
@@ -458,7 +464,7 @@ const scene3 = [
   {
     id: 200,
     name: "trousse a pharmacie",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id1.mp3",
     subtitles:
       "Je suis pas fan de ce genre de boîtes... Pour autant, celle-ci semble différente.",
     picture: "/Scene3/thermometre.png",
@@ -473,7 +479,7 @@ const scene3 = [
   {
     id: 2,
     name: "rapports de sécurité",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id2.mp3",
     subtitles:
       "Les rapports de sécurité du casino... C'est pas très rassurants.",
     picture: "/Scene3/RapportSecurité.png",
@@ -487,7 +493,7 @@ const scene3 = [
   {
     id: 3,
     name: "fiche de réservation d'hôtel",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id3.mp3",
     subtitles:
       "Un Casino hôtel ? Ils sont complets, et même en sureffectifs...",
     picture: "/Scene3/ReservationHotel.png",
@@ -501,7 +507,7 @@ const scene3 = [
   {
     id: 4,
     name: "uniforme infirmier",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id4.mp3",
     subtitles: "Eh mais, c'est l'uniforme des employés du casino, non ?",
     picture: "/Scene3/UniformeInfirmier.png",
     alt: "uniforme infirmier",
@@ -514,7 +520,7 @@ const scene3 = [
   {
     id: 5,
     name: "tableau hospitalier",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id5.mp3",
     subtitles:
       "Les médecins écrivent toujours en langage codés ahah.. Tiens, pourquoi je parle de médecins, moi ?",
     picture: "/Scene3/TableauHospitalier.png",
@@ -529,7 +535,7 @@ const scene3 = [
   {
     id: 6,
     name: "livre sur les probabilités",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id6.mp3",
     subtitles:
       "Un livre sur les probabilités... Elles sont infimes. Ce sont EUX, les tricheurs.",
     picture: "/Scene3/LivreProba.png",
@@ -542,7 +548,7 @@ const scene3 = [
   {
     id: 7,
     name: "verre de cocktail",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id7.mp3",
     subtitles: "KLING KLING KLING Tchin tchin la compagnie !",
     picture: "/Scene3/VerreCocktail.png",
     alt: "verre de cocktail",
@@ -554,7 +560,7 @@ const scene3 = [
   {
     id: 8,
     name: "verre de whisky",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id8.mp3",
     subtitles: "Garçon ! Encore un doigt !",
     picture: "/Scene3/VerreWhisky.png",
     alt: "verre de whisky",
@@ -566,7 +572,7 @@ const scene3 = [
   {
     id: 9,
     name: "bouteille d'alcool",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id9.mp3",
     subtitles: "Et un p'tit coup pour bibi à la santé de Mary !",
     picture: "/Scene3/BouteilleAlcool.png",
     alt: "bouteille d'alcool",
@@ -578,7 +584,7 @@ const scene3 = [
   {
     id: 10,
     name: "stéthoscope",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id10.mp3",
     subtitles: "[BRUITS DE BATTEMENTS DE COEUR]",
     picture: "/Scene3/Stétoscope.png",
     alt: "stéthoscope",
@@ -590,7 +596,7 @@ const scene3 = [
   {
     id: 11,
     name: "paquet de cartes",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id11.mp3",
     subtitles: "J'ai une Quinte Flush Royale. Je bluff ou pas ?",
     picture: "/Scene3/PaquetCarte.png",
     alt: "paquet de cartes",
@@ -602,7 +608,7 @@ const scene3 = [
   {
     id: 12,
     name: "lunettes de soleil",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id12.mp3",
     subtitles: "Encore ici ?",
     picture: "/Scene3/lunette.png",
     alt: "lunettes de soleil",
@@ -614,7 +620,7 @@ const scene3 = [
   {
     id: 13,
     name: "dettes de jeu",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id13.mp3",
     subtitles:
       "Des dettes de jeu au nom de... Gerard Hadd... Hey, mais c'est moi, ça !",
     picture: "/Scene3/DettesJeu.png",
@@ -627,7 +633,7 @@ const scene3 = [
   {
     id: 14,
     name: "pillulier",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id14.mp3",
     subtitles: "NON ! PAS LES PILLULES !",
     picture: "/Scene3/Pilulier.png",
     alt: "pillulier",
@@ -639,7 +645,7 @@ const scene3 = [
   {
     id: 15,
     name: "camera",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene3/sc3id15.mp3",
     subtitles:
       "Ils ne veulent pas me laisser tranquille... Ils nous surveillent tout le temps... TOUT LE TEMPS !!!",
     picture: "/Scene3/caméra.png",
@@ -652,6 +658,7 @@ const scene3 = [
   {
     id: 16,
     name: "cadenas",
+    sound: "static1/scene3/sc3id16.mp3",
     subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
@@ -668,7 +675,7 @@ const scene4 = [
   {
     id: 300,
     name: "alliance",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id1.mp3",
     subtitles: "[VOIX TRISTE] Mais... Mais c'est l'alliance de Mary... ? SNIF",
     picture: "/Scene4/alliance.png",
     splineUrl: "https://prod.spline.design/AqJQTyW7yiQYWQ2d/scene.splinecode",
@@ -682,7 +689,7 @@ const scene4 = [
   {
     id: 2,
     name: "sac à main de Mary",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id2.mp3",
     subtitles:
       "Le sac à main de Mary... Qu'est ce qu'il fait là.. Et ? Oh, il y a une note dedans... !",
     picture: "/Scene4/Alphabet.png",
@@ -696,7 +703,7 @@ const scene4 = [
   {
     id: 3,
     name: "affiche murale",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id3.mp3",
     subtitles: "C'est quoi ce charabia sur le mur ? Je devrais m'y pencher...",
     picture: "/Scene4/ecritureMur.png",
     alt: "affiche murale",
@@ -710,7 +717,7 @@ const scene4 = [
   {
     id: 4,
     name: "cadre photo de Mary",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "",
     subtitles: "[VOIX TRISTE] Une photo de Mary... Elle est si belle...",
     picture: "/",
     alt: "cadre photo de Mary",
@@ -722,7 +729,7 @@ const scene4 = [
   {
     id: 5,
     name: "paquet de cartes",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id5.mp3",
     subtitles:
       "Une petite partie de Poker ? Allez mise tapis... Je te suis. Mais je vais gagner... Hihihihihihihihihihihi !",
     picture: "/Scene4/PaquetCarte.png",
@@ -735,7 +742,7 @@ const scene4 = [
   {
     id: 6,
     name: "un poulet en peluche",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id6.mp3",
     subtitles:
       "EH MAIS ! Je le reconnait, lui.. c'est Abdou ! Ma peluche poulet d'enfance !",
     picture: "/Scene4/Poulet.png",
@@ -748,7 +755,7 @@ const scene4 = [
   {
     id: 7,
     name: "un chat en peluche",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id7.mp3",
     subtitles: "Ce chat... C'est Alex, ma peluche kitten d'un chat.",
     picture: "/Scene4/Chat.png",
     alt: "un chat en peluche",
@@ -760,7 +767,7 @@ const scene4 = [
   {
     id: 8,
     name: "radio",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id8.mp3",
     subtitles: "[HURLEMENTS ET RIRES INQUIETANTS PROVENANT DE LA RADIO]",
     picture: "/Scene4/radio.png",
     alt: "radio",
@@ -772,7 +779,7 @@ const scene4 = [
   {
     id: 9,
     name: "sac de jetons",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id9.mp3",
     subtitles: "Les jetons.. Plein de jetons.. A moi...",
     picture: "/Scene4/SacJetons.png",
     alt: "sac de jetons",
@@ -784,7 +791,7 @@ const scene4 = [
   {
     id: 10,
     name: "caméra",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene4/sc4id10.mp3",
     subtitles: "[HURLEMENT D'AGACEMENT] ARRÊTEZ DE ME REGARDER !!!",
     picture: "/Scene4/caméra.png",
     alt: "caméra",
@@ -796,6 +803,7 @@ const scene4 = [
   {
     id: 15,
     name: "cadenas",
+    sound: "static1/scene4/sc4id15.mp3",
     subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
@@ -812,7 +820,7 @@ const scene5 = [
   {
     id: 400,
     name: "bouquet de fleurs",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "",
     subtitles:
       "Je.. Je reconnais ces fleurs.. C'est.. SNIF C'est celles que j'ai offert à Mary avant.. Avant que.. [SANGLOTS]",
     picture: "/Scene5/bouquet.png",
@@ -827,7 +835,7 @@ const scene5 = [
   {
     id: 2,
     name: "radio",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "",
     subtitles:
       "[AUDIO ETRANGE CODE: . _ _ _ _ ; . . . . _ ; . . _ _ _ ; _ _ _ _ _ ]",
     picture: "/Scene5/radio.png",
@@ -841,7 +849,7 @@ const scene5 = [
   {
     id: 3,
     name: "tombe de Mary",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id3.mp3",
     subtitles:
       "La tombe de Mary... un lieu de repos éternel qui me semble si lointain. Un beau jour, je te retrouverai, douce Mary. Hein ?! Quelque chose est gravé derrière la stèle !",
     picture: "/Scene5/tombe.png",
@@ -856,7 +864,7 @@ const scene5 = [
   {
     id: 4,
     name: "certificat de décès de Mary Hadd",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id4.mp3",
     subtitles:
       "C'est le certificat de décès de Mary... [SANGLOTS] ... Elle me manque tellement, ma petite femme...",
     picture: "/Scene5/certificatDece.png",
@@ -869,7 +877,7 @@ const scene5 = [
   {
     id: 5,
     name: "lettre d'interdiction des Casinos",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id5.mp3",
     subtitles:
       "Une lettre : Cher Monsieur Hadd, nous vous informons que vous êtes désormais interdit de Casino en raison de trop nombreuses dettes de jeu... [SOUPIR] Tss quels rabats joie. J'aurais pu rembourser tout ça et faire même du profit avec un dernier poker...",
     picture: "/Scene5/RadiéCasino.png",
@@ -882,7 +890,7 @@ const scene5 = [
   {
     id: 6,
     name: "pistolet",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id6.mp3",
     subtitles:
       "N... Non... Je le reconnaît. C'est avec cette arme que j'ai essayé... ... Je suis trop faible... J'ai tout raté.. Même ma mort, je l'ai ratée.. !",
     picture: "/Scene5/flinge.jpg",
@@ -895,7 +903,7 @@ const scene5 = [
   {
     id: 7,
     name: "sac de jetons",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id47.mp3",
     subtitles:
       "Un sac de jetons... vestige d'une époque où tout était plus beau.",
     picture: "/Scene5/SacJetons.png",
@@ -908,7 +916,7 @@ const scene5 = [
   {
     id: 8,
     name: "caméra de surveillance",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id8.mp3",
     subtitles:
       "Cette caméra... me regarde-t-elle depuis le début? Enregistre-t-elle ma descente aux enfers? Ou.. Peut-être que c'est moi qui la regade, non... ?",
     picture: "/Scene5/caméra.png",
@@ -921,7 +929,7 @@ const scene5 = [
   {
     id: 9,
     name: "résultats d'analyses de psychiatrie",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id9.mp3",
     subtitles:
       "Il est écrit que Monsieur Gérars Hadd est atteint de troubles psychologiques atypique et d'une addiction aux jeux... [RIRE MALSAIN] Quel nase ce Gérard ! [CRI INQUIETANT] TAIS TOI ! TAIS TOI , NE M'INSULTE PAS !",
     picture: "/Scene5/analyse.png",
@@ -934,7 +942,7 @@ const scene5 = [
   {
     id: 10,
     name: "ballon de clown",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id10.mp3",
     subtitles: "[HURLEMENT]",
     picture: "/Scene5/ballonClown.png",
     alt: "ballon de clown",
@@ -946,7 +954,7 @@ const scene5 = [
   {
     id: 11,
     name: "paquet de cartes",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id11.mp3",
     subtitles:
       "J'aimerais tant pouvoir rejouer une dernière fois... J'aimerais jouer avec Mary dans un véritable Casino...",
     picture: "/Scene5/PaquetCarte.png",
@@ -959,7 +967,7 @@ const scene5 = [
   {
     id: 12,
     name: "photo de mariage de Mary et Gérard",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id12.mp3",
     subtitles:
       "La photo de mon mariage avec Mary... Mary et Gerard Hadd.. Nous avons été si heureux. Désormais, cette photo ,ne reflète que l'écho de ma propre douleur.. SNIF",
     picture: "/",
@@ -972,7 +980,7 @@ const scene5 = [
   {
     id: 13,
     name: "stéthoscope",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id13.mp3",
     subtitles:
       "Ce stéthoscope... Ils m'examinent tous les jours... Je n'ai pas besoin de ça... Je vais bien, pourtant non.. ?",
     picture: "/",
@@ -985,7 +993,7 @@ const scene5 = [
   {
     id: 14,
     name: "boîte de Xanax",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id14.mp3",
     subtitles:
       "Je me souviens, maintenant... C'est la boîte de Xanax que j'ai avalée en espérant calmer mes démons intérieurs, en vain...",
     picture: "/Scene5/Xanax.png",
@@ -998,7 +1006,7 @@ const scene5 = [
   {
     id: 15,
     name: "bouteille d'alcool",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static1/scene5/sc5id15.mp3",
     subtitles:
       "C'est la bouteille d'alcool que j'ai vidée cette fameuse nuit dernière pour tenter d'oublier... mais rien n'a changé. Non... Rien.",
     picture: "/Scene5/BouteilleAlcool.png",
@@ -1011,6 +1019,7 @@ const scene5 = [
   {
     id: 16,
     name: "cadenas",
+    sound: "static1/scene5/sc5id16.mp3",
     subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
