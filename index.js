@@ -480,7 +480,7 @@ const scene2 = [
     x: 46.95,
     y: 47.7,
     largeur: 20,
-    dechiffrage: "qjx ojzc xtsy kfnyx",
+    dechiffrage: "Qjx ojzc xtsy kfnyx",
   },
 ];
 
@@ -695,7 +695,7 @@ const scene3 = [
     subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
-    code: "Psychiatrie",
+    code: "PSYCHIATRIE",
     inventory: false,
     x: 28.5,
     y: 59.8,
