@@ -685,7 +685,7 @@ const scene4 = [
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Le sac à main de Mary... Qu'est ce qu'il fait là.. Et ? Oh, il y a une note dedans... !",
-    picture: "/Scene4/Alphabet.jpg",
+    picture: "/Scene4/Alphabet.png",
     alt: "sac à main de Mary",
     inventory: false,
     x: 60,
