@@ -450,9 +450,9 @@ const scene2 = [
     alt: "cadenas",
     code: "Quinte flush royale",
     inventory: false,
-    x: 51.9,
-    y: 51.5,
-    largeur: 25,
+    x: 46.95,
+    y: 47.7,
+    largeur: 20,
     dechiffrage: "qjx ojzc xtsy kfnyx"
   },
 ];
@@ -708,22 +708,6 @@ const scene4 = [
     decryptage: true,
     imgSrc: "/Scene3/tripoli.png",
   },
-  {
-    id: 3,
-    name: "affiche murale",
-    sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "C'est quoi ce charabia sur le mur ? Je devrais m'y pencher...",
-    picture: "/Scene4/ecritureMur.png",
-    alt: "affiche murale",
-    inventory: false,
-    x: 30,
-    y: 40,
-    largeur: 30,
-    indice: true,
-    decryptage: true,
-    imgSrc: "/Scene3/tripoli.png",
-  },
-  
   // {
   //   id: 3,
   //   name: "affiche murale",
@@ -732,11 +716,14 @@ const scene4 = [
   //   picture: "/Scene4/ecritureMur.png",
   //   alt: "affiche murale",
   //   inventory: false,
-  //   x: 37,
+  //   x: 30,
   //   y: 40,
-  //   largeur: 120,
+  //   largeur: 30,
   //   indice: true,
+  //   decryptage: true,
+  //   imgSrc: "/Scene3/tripoli.png",
   // },
+  
   // Objets Autres
   {
     id: 4,
