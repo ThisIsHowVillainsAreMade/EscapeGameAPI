@@ -998,7 +998,7 @@ const scene5 = [
       "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
-    code: "Quinte flush royale",
+    code: "ASILE",
     inventory: false,
     x: 51.9,
     y: 51.5,
