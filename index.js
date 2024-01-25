@@ -19,18 +19,20 @@ const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
   {
     id: 1,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound1: "static/audios/naraS1.mp3",
+    sound2: "static/audios/issou.mp3",
     subtitles1: "Aie.. Ma tête… Mais.. ?! Où je suis là ?",
     subtitles2: "Je ne me rappelle de rien.",
     subtitles3: "Pourquoi je suis dans un casino ?",
     subtitles4: "La salle me semble étrange, je n'y vois qu'une seule porte.",
-    subtitles5: "Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.",
+    subtitles5:
+      "Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.",
     subtitles6: "Dans quelle galère je me suis fourré...",
   },
   // Après la salle 1, avant la salle 2.
   {
     id: 2,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static/audios/naraS1.mp3",
     subtitles1: "Encore une salle … :soupire:",
     subtitles2: "Toutes ces roulettes me font tourner la tête !",
     subtitles3: "Ah, j'aperçois une autre porte, verrouillée celle-ci aussi…",
@@ -40,7 +42,7 @@ const narration = [
   // Après la salle 2, avant la salle 3.
   {
     id: 3,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "static/audios/issou.mp3",
     subtitles1: "Mais ce n'est pas possible !!",
     subtitles2: "Il y en a combien de ces foutues salles-là ?!",
     subtitles3: "Et j’imagine qu’elle est verrouillée",
@@ -1027,6 +1029,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/narration", (req, res) => {
+  console.log("ABDOU ICI");
   res.json(narration);
 });
 
