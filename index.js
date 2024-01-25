@@ -12,6 +12,8 @@ app.use("/Scene2", express.static(path.join(__dirname, "./Scene2")));
 app.use("/Scene3", express.static(path.join(__dirname, "./Scene3")));
 app.use("/Scene4", express.static(path.join(__dirname, "./Scene4")));
 app.use("/Scene5", express.static(path.join(__dirname, "./Scene5")));
+app.use("/static", express.static("assets"));
+// app.use("/assets", express.static(path.join(__dirname, "/audio")));
 
 const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
@@ -59,7 +61,7 @@ const scene1 = [
   {
     id: 1,
     name: "jeton",
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound: "./Scene1/audio/frapper-porte.mp3",
     subtitles: "Mhm... Je devrais peut-être regarder ce jeton de plus près.",
     picture: "/Scene1/Jeton.png",
     alt: "jeton de poker",
@@ -73,26 +75,26 @@ const scene1 = [
   {
     id: 2,
     name: "montre luxueuse",
-    sound: "./assets/audios/issou_6xYAXwo.mp3", // TEST
+    sound: "static/audios/issou.mp3", // TEST
     subtitles: "Cette montre est arrêtée sur 10H10. Etrange...",
     picture: "/Scene1/montre10.png",
     alt: "montre luxueuse",
     inventory: false,
-    x: 30,
+    x: 27,
     y: 65,
-    largeur: 25,
+    largeur: 28,
     indice: true,
   },
   {
     id: 3,
     name: "badge de sécurité",
-    sound: "./assets/audios/oh-alerte-au-gogol_CkdeC6s.mp3", //TEST AUSSI
+    sound: "/Scene1/audio/porte.wav",
     subtitles: "Oh ! Un badge de sécurité. Il s'agit du numéro 809.",
     picture: "/Scene1/badge809.png",
     alt: "badge de sécurité",
     inventory: false,
-    x: 79.5,
-    y: 55,
+    x: 72,
+    y: 63,
     largeur: 30,
     indice: true,
   },
@@ -106,7 +108,7 @@ const scene1 = [
     inventory: false,
     x: 25,
     y: 65,
-    largeur: 30,
+    largeur: 23,
     indice: true,
   },
   {
@@ -118,8 +120,8 @@ const scene1 = [
     picture: "/Scene1/dé.png",
     alt: "dé truqué",
     inventory: false,
-    x: 75,
-    y: 70,
+    x: 82,
+    y: 71,
     largeur: 25,
     indice: true,
   },
@@ -160,7 +162,7 @@ const scene1 = [
     picture: "/Scene1/SacJetons.png",
     alt: "sac de jetons",
     inventory: false,
-    x: 67,
+    x: 72,
     y: 56,
     largeur: 32,
     indice: false,
@@ -174,10 +176,9 @@ const scene1 = [
     picture: "/Scene1/BilletBanque.png",
     alt: "billets de banque",
     inventory: false,
-    x: 50,
-    y: 75,
-    largeur: 30,
-    indice: false,
+    x: 60,
+    y: 49.7,
+    largeur: 20,
   },
   {
     id: 10,
@@ -188,8 +189,8 @@ const scene1 = [
     picture: "/Scene1/BouteilleAlcool.png",
     alt: "bouteille d'alcool fort",
     inventory: false,
-    x: 85,
-    y: 34.4,
+    x: 92,
+    y: 34.5,
     largeur: 35,
     indice: false,
   },
@@ -229,7 +230,7 @@ const scene1 = [
     picture: "/Scene1/roulette.png",
     alt: "roulette",
     inventory: false,
-    x: 71.1,
+    x: 74.7,
     y: 63,
     largeur: 110,
     indice: false,
@@ -242,19 +243,19 @@ const scene1 = [
     picture: "/Scene1/Xanax.png",
     alt: "boîte de Xanax",
     inventory: false,
-    x: 17,
-    y: 60.8,
-    largeur: 35,
-    indice: false,
+    x: 11.5,
+    y: 59.5,
+    largeur: 38,
   },
   {
     id: 15,
     name: "cadenas",
+    subtitles:"Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: 679108092,
     inventory: false,
-    x: 51.9,
+    x: 52.3,
     y: 51.5,
     largeur: 25,
     indice: false,
@@ -270,12 +271,13 @@ const scene2 = [
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
     picture: "/Scene2/sucre.png",
-    splineUrl: "https://prod.spline.design/nZVPf8N8YanFoqhn/scene.splinecode",
     alt: "sucre d'orge",
     inventory: true,
-    x: 23,
-    y: 60,
-    largeur: 32,
+    x: 62,
+    y: 65,
+    largeur: 40,
+    splineUrl: "https://prod.spline.design/nZVPf8N8YanFoqhn/scene.splinecode",
+
   },
   // Indice
   {
@@ -286,9 +288,9 @@ const scene2 = [
     picture: "/Scene1/roulette.png",
     alt: "roulette",
     inventory: false,
-    x: 61,
-    y: 50,
-    largeur: 150,
+    x: 68,
+    y: 54,
+    largeur: 85,
     indice: true,
   },
   //  Objets Autres
@@ -301,9 +303,9 @@ const scene2 = [
     picture: "/Scene2/lunette.png",
     alt: "lunettes de soleil fashion",
     inventory: false,
-    x: 63.5,
-    y: 74.35,
-    largeur: 30,
+    x: 82,
+    y: 70.5,
+    largeur: 25,
   },
   {
     id: 4,
@@ -326,9 +328,9 @@ const scene2 = [
     picture: "/Scene2/radio.png",
     alt: "radio",
     inventory: false,
-    x: 56,
-    y: 49,
-    largeur: 30,
+    x: 61,
+    y: 64,
+    largeur: 50,
   },
   {
     id: 6,
@@ -420,6 +422,8 @@ const scene2 = [
   {
     id: 15,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Quinte flush royale",
@@ -629,6 +633,8 @@ const scene3 = [
   {
     id: 16,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Psychiatrie",
@@ -772,6 +778,8 @@ const scene4 = [
   {
     id: 15,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "DESCENTE AUX ENFERS",
@@ -986,9 +994,11 @@ const scene5 = [
   {
     id: 16,
     name: "cadenas",
+    subtitles:
+      "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
-    code: "Quinte flush royale",
+    code: "ASILE",
     inventory: false,
     x: 51.9,
     y: 51.5,
