@@ -449,7 +449,7 @@ const scene2 = [
     inventory: false,
     x: 51.9,
     y: 51.5,
-    largeur: 20,
+    largeur: 25,
     dechiffrage: "qjx ojzc xtsy kfnyx"
   },
 ];
