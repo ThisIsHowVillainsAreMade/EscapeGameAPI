@@ -20,7 +20,7 @@ const narration = [
   // Lorsqu'on lance le jeu, avant la salle 1.
   {
     id: 1,
-    sound: "",
+    sound1: "static1/Narrations/NarScene1/naraS101.mp3",
     subtitles1: "Aie.. Ma tête… Mais.. ?! Où je suis là ?",
     subtitles2: "Je ne me rappelle de rien.",
     subtitles3: "Pourquoi je suis dans un casino ?",
@@ -32,7 +32,7 @@ const narration = [
   // Après la salle 1, avant la salle 2.
   {
     id: 2,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound2: "INSERER LE PATH DE L AUDIO",
     subtitles1: "Encore une salle … :soupire:",
     subtitles2: "Toutes ces roulettes me font tourner la tête !",
     subtitles3: "Ah, j'aperçois une autre porte, verrouillée celle-ci aussi…",
@@ -42,7 +42,7 @@ const narration = [
   // Après la salle 2, avant la salle 3.
   {
     id: 3,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound3: "INSERER LE PATH DE L AUDIO",
     subtitles1: "Mais ce n'est pas possible !!",
     subtitles2: "Il y en a combien de ces foutues salles-là ?!",
     subtitles3: "Et j’imagine qu’elle est verrouillée",
@@ -52,7 +52,7 @@ const narration = [
   // Après la salle 3, avant la salle 4.
   {
     id: 4,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound4: "INSERER LE PATH DE L AUDIO",
     subtitles1: ":rire: Ahahahahahahahaha !",
     subtitles2: "Je vais devenir fou !",
     subtitles3: ":pleure:",
@@ -61,7 +61,7 @@ const narration = [
   // Après la salle 4, avant la salle 5.
   {
     id: 5,
-    sound: "INSERER LE PATH DE L AUDIO",
+    sound5: "INSERER LE PATH DE L AUDIO",
     subtitles1: "Oooh la jolie salle !",
     subtitles2: "Non elle me fait peur :effrayé:",
     subtitles3: "J'entends des voix",
@@ -284,7 +284,7 @@ const scene1 = [
     y: 51.5,
     largeur: 25,
     indice: false,
-    dechiffrage: "_ _ _ - _ _ - _ _ _ - _"
+    dechiffrage: "_ _ _ - _ _ - _ _ _ - _",
   },
 ];
 
@@ -317,12 +317,8 @@ const scene2 = [
     y: 55,
     largeur: 80,
     indice: true,
-<<<<<<< HEAD
-    decript: true,
-=======
     decryptage: true,
     imgSrc: "/Scene2/Alberti.png",
->>>>>>> dev
   },
   //  Objets Autres
   {
@@ -462,7 +458,7 @@ const scene2 = [
     x: 46.95,
     y: 47.7,
     largeur: 20,
-    dechiffrage: "qjx ojzc xtsy kfnyx"
+    dechiffrage: "qjx ojzc xtsy kfnyx",
   },
 ];
 
@@ -711,11 +707,12 @@ const scene4 = [
     picture: "/Scene4/sac-a-main.png",
     alt: "sac à main de Mary",
     inventory: false,
-<<<<<<< HEAD
-    x: 60,
-    y: 40,
-    largeur: 30,
+    x: 63,
+    y: 68,
+    largeur: 90,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/tripoli.png",
   },
   {
     id: 3,
@@ -728,14 +725,7 @@ const scene4 = [
     x: 30,
     y: 40,
     largeur: 30,
-=======
-    x: 63,
-    y: 68,
-    largeur: 90,
->>>>>>> dev
     indice: true,
-    decryptage: true,
-    imgSrc: "/Scene3/tripoli.png",
   },
   // {
   //   id: 3,
@@ -752,7 +742,7 @@ const scene4 = [
   //   decryptage: true,
   //   imgSrc: "/Scene3/tripoli.png",
   // },
-  
+
   // Objets Autres
   {
     id: 4,
@@ -852,7 +842,7 @@ const scene4 = [
     x: 51.2,
     y: 53.5,
     largeur: 25,
-    dechiffrage: "45135525 136 556591"
+    dechiffrage: "45135525 136 556591",
   },
 ];
 
