@@ -20,31 +20,53 @@ const narration = [
   {
     id: 1,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "Aie.. Ma tête… Mais.. ?! Où je suis là ?",
+    subtitles2: "Je ne me rappelle de rien.",
+    subtitles3: "Pourquoi je suis dans un casino ?",
+    subtitles4: "La salle me semble étrange, je n'y vois qu'une seule porte.",
+    subtitles5: "Hmm, elle semble verrouillée... Je vais devoir trouver un moyen de sortir de cette salle.",
+    subtitles6: "Dans quelle galère je me suis fourré...",
   },
   // Après la salle 1, avant la salle 2.
   {
     id: 2,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "Encore une salle … :soupire:",
+    subtitles2: "Toutes ces roulettes me font tourner la tête !",
+    subtitles3: "Ah, j'aperçois une autre porte, verrouillée celle-ci aussi…",
+    subtitles4: "Je vais devoir encore me débrouiller pour la dévérouiller.",
+    subtitles5: "Raaaah",
   },
   // Après la salle 2, avant la salle 3.
   {
     id: 3,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "Mais ce n'est pas possible !!",
+    subtitles2: "Il y en a combien de ces foutues salles-là ?!",
+    subtitles3: "Et j’imagine qu’elle est verrouillée",
+    subtitles4: ":souffle: En plus, elle est lugubre celle-ci",
+    subtitles5: "Aller, courage Gégé !",
   },
   // Après la salle 3, avant la salle 4.
   {
     id: 4,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: ":rire: Ahahahahahahahaha !",
+    subtitles2: "Je vais devenir fou !",
+    subtitles3: ":pleure:",
+    subtitles4: ":chuchotement: j’ai peur…",
   },
   // Après la salle 4, avant la salle 5.
   {
     id: 5,
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles: "INSERER SUBTITLES",
+    subtitles1: "Oooh la jolie salle !",
+    subtitles2: "Non elle me fait peur :effrayé:",
+    subtitles3: "J'entends des voix",
+    subtitles4: ":pleure:",
+    subtitles5: ":rire:",
+    subtitles6: "A l'aiiiiiiiiiide :cri:!",
+    subtitles7: "Libérez moi :supplice:",
   },
   // Après la salle 5, choix.
   {
@@ -250,7 +272,7 @@ const scene1 = [
   {
     id: 15,
     name: "cadenas",
-    subtitles:"Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: 679108092,
@@ -266,18 +288,16 @@ const scene2 = [
   // Indice 3D
   {
     id: 100,
-    name: "sucre d'orge",
+    name: "canne",
     sound: "INSERER LE PATH DE L AUDIO",
-    subtitles:
-      "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
+    subtitles: "...Mmmmmh.. Une vieille canne ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
     picture: "/Scene2/sucre.png",
-    alt: "sucre d'orge",
+    alt: "canne",
     inventory: true,
     x: 62,
     y: 65,
     largeur: 40,
     splineUrl: "https://prod.spline.design/nZVPf8N8YanFoqhn/scene.splinecode",
-
   },
   // Indice
   {
@@ -422,8 +442,7 @@ const scene2 = [
   {
     id: 15,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Quinte flush royale",
@@ -438,13 +457,13 @@ const scene3 = [
   // Indice 3D
   {
     id: 200,
-    name: "thermomètre digital",
+    name: "trousse a pharmacie",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
-      "Je suis pas fan de ce genre de technologies... Pour autant, celui-ci semble différent.",
+      "Je suis pas fan de ce genre de boîtes... Pour autant, celle-ci semble différente.",
     picture: "/Scene3/thermometre.png",
     splineUrl: "https://prod.spline.design/ikl9LuKio4ff063r/scene.splinecode",
-    alt: "thermomètre digital",
+    alt: "trousse a pharmacie",
     inventory: true,
     x: 65,
     y: 35,
@@ -633,8 +652,7 @@ const scene3 = [
   {
     id: 16,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Psychiatrie",
@@ -778,8 +796,7 @@ const scene4 = [
   {
     id: 15,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "DESCENTE AUX ENFERS",
@@ -994,8 +1011,7 @@ const scene5 = [
   {
     id: 16,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "ASILE",
