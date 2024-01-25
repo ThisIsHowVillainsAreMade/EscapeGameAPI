@@ -447,8 +447,8 @@ const scene2 = [
     alt: "cadenas",
     code: "Quinte flush royale",
     inventory: false,
-    x: 46.95,
-    y: 47.7,
+    x: 51.9,
+    y: 51.5,
     largeur: 20,
     dechiffrage: "qjx ojzc xtsy kfnyx"
   },
