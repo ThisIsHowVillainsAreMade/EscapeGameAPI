@@ -250,7 +250,7 @@ const scene1 = [
   {
     id: 15,
     name: "cadenas",
-    subtitles:"Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: 679108092,
@@ -266,18 +266,17 @@ const scene2 = [
   // Indice 3D
   {
     id: 100,
-    name: "sucre d'orge",
+    name: "canne",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "...Mmmmmh Sucre d'Orge... Et si je me le gardais pour plus tard ?", // Dans le style de Homer Simpsons et son "Mmmmmh Donuts".
     picture: "/Scene2/sucre.png",
-    alt: "sucre d'orge",
+    alt: "canne",
     inventory: true,
     x: 62,
     y: 65,
     largeur: 40,
     splineUrl: "https://prod.spline.design/nZVPf8N8YanFoqhn/scene.splinecode",
-
   },
   // Indice
   {
@@ -422,8 +421,7 @@ const scene2 = [
   {
     id: 15,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Quinte flush royale",
@@ -438,13 +436,13 @@ const scene3 = [
   // Indice 3D
   {
     id: 200,
-    name: "thermomètre digital",
+    name: "trousse a pharmacie",
     sound: "INSERER LE PATH DE L AUDIO",
     subtitles:
       "Je suis pas fan de ce genre de technologies... Pour autant, celui-ci semble différent.",
     picture: "/Scene3/thermometre.png",
     splineUrl: "https://prod.spline.design/ikl9LuKio4ff063r/scene.splinecode",
-    alt: "thermomètre digital",
+    alt: "trousse a pharmacie",
     inventory: true,
     x: 65,
     y: 35,
@@ -633,8 +631,7 @@ const scene3 = [
   {
     id: 16,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Psychiatrie",
@@ -778,8 +775,7 @@ const scene4 = [
   {
     id: 15,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "DESCENTE AUX ENFERS",
@@ -994,8 +990,7 @@ const scene5 = [
   {
     id: 16,
     name: "cadenas",
-    subtitles:
-      "Je devrais encore continuer d'explorer la salle...",
+    subtitles: "Je devrais encore continuer d'explorer la salle...",
     picture: "/Scene1/padlock-303266_1280.png",
     alt: "cadenas",
     code: "Quinte flush royale",
