@@ -21,6 +21,11 @@ const narration = [
   {
     id: 1,
     sound1: "static1/Narrations/NarScene1/naraS101.mp3",
+    sound2: "static1/Narrations/NarScene1/naraS102.mp3",
+    sound3: "static1/Narrations/NarScene1/naraS103.mp3",
+    sound4: "static1/Narrations/NarScene1/naraS104.mp3",
+    sound5: "static1/Narrations/NarScene1/naraS105.mp3",
+    sound6: "static1/Narrations/NarScene1/naraS106.mp3",
     subtitles1: "Aie.. Ma tête… Mais.. ?! Où je suis là ?",
     subtitles2: "Je ne me rappelle de rien.",
     subtitles3: "Pourquoi je suis dans un casino ?",
@@ -32,7 +37,11 @@ const narration = [
   // Après la salle 1, avant la salle 2.
   {
     id: 2,
-    sound2: "INSERER LE PATH DE L AUDIO",
+    sound1: "static1/Narrations/NarScene2/naraScene02id1.mp3",
+    sound2: "static1/Narrations/NarScene2/naraScene02id2.mp3",
+    sound3: "static1/Narrations/NarScene2/naraScene02id3.mp3",
+    sound4: "static1/Narrations/NarScene2/naraScene02id4.mp3",
+    sound5: "static1/Narrations/NarScene2/naraScene02id5.mp3",
     subtitles1: "Encore une salle … :soupire:",
     subtitles2: "Toutes ces roulettes me font tourner la tête !",
     subtitles3: "Ah, j'aperçois une autre porte, verrouillée celle-ci aussi…",
@@ -42,7 +51,11 @@ const narration = [
   // Après la salle 2, avant la salle 3.
   {
     id: 3,
-    sound3: "INSERER LE PATH DE L AUDIO",
+    sound1: "static1/Narrations/NarScene3/naraScene03id1.mp3",
+    sound2: "static1/Narrations/NarScene3/naraScene03id2.mp3",
+    sound3: "static1/Narrations/NarScene3/naraScene03id3.mp3",
+    sound4: "static1/Narrations/NarScene3/naraScene03id4.mp3",
+    sound5: "static1/Narrations/NarScene3/naraScene03id5.mp3",
     subtitles1: "Mais ce n'est pas possible !!",
     subtitles2: "Il y en a combien de ces foutues salles-là ?!",
     subtitles3: "Et j’imagine qu’elle est verrouillée",
@@ -52,7 +65,10 @@ const narration = [
   // Après la salle 3, avant la salle 4.
   {
     id: 4,
-    sound4: "INSERER LE PATH DE L AUDIO",
+    sound1: "static1/Narrations/NarScene4/naraScene04id1.mp3",
+    sound2: "static1/Narrations/NarScene4/naraScene04id2.mp3",
+    sound3: "static1/Narrations/NarScene4/naraScene04id3.mp3",
+    sound4: "static1/Narrations/NarScene4/naraScene04id4.mp3",
     subtitles1: ":rire: Ahahahahahahahaha !",
     subtitles2: "Je vais devenir fou !",
     subtitles3: ":pleure:",
@@ -61,7 +77,13 @@ const narration = [
   // Après la salle 4, avant la salle 5.
   {
     id: 5,
-    sound5: "INSERER LE PATH DE L AUDIO",
+    sound1: "static1/Narrations/NarScene5/naraScene05id1.mp3",
+    sound2: "static1/Narrations/NarScene5/naraScene05id2.mp3",
+    sound3: "static1/Narrations/NarScene5/naraScene05id3.mp3",
+    sound4: "static1/Narrations/NarScene5/naraScene05id4.mp3",
+    sound5: "static1/Narrations/NarScene5/naraScene05id5.mp3",
+    sound6: "static1/Narrations/NarScene5/naraScene05id6.mp3",
+    sound7: "static1/Narrations/NarScene5/naraScene05id7.mp3",
     subtitles1: "Oooh la jolie salle !",
     subtitles2: "Non elle me fait peur :effrayé:",
     subtitles3: "J'entends des voix",
