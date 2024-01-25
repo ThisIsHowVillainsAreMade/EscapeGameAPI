@@ -281,6 +281,7 @@ const scene1 = [
     y: 51.5,
     largeur: 25,
     indice: false,
+    dechiffrage: "_ _ _ - _ _ - _ _ _ - _"
   },
 ];
 
@@ -312,6 +313,8 @@ const scene2 = [
     y: 55,
     largeur: 80,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene2/Alberti.png",
   },
   //  Objets Autres
   {
@@ -484,6 +487,8 @@ const scene3 = [
     y: 93,
     largeur: 60,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   {
     id: 3,
@@ -498,6 +503,8 @@ const scene3 = [
     y: 82.5,
     largeur: 50,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   {
     id: 4,
@@ -511,6 +518,8 @@ const scene3 = [
     y: 49.4,
     largeur: 30,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   {
     id: 5,
@@ -525,6 +534,8 @@ const scene3 = [
     y: 35,
     largeur: 220,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/Pigpen.png",
   },
   // Objets Autres
   {
@@ -661,6 +672,7 @@ const scene3 = [
     x: 28.5,
     y: 59.8,
     largeur: 30,
+    dechiffrage: "/Scene3/Pigpen.png",
   },
 ];
 
@@ -693,6 +705,23 @@ const scene4 = [
     y: 68,
     largeur: 90,
     indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/tripoli.png",
+  },
+  {
+    id: 3,
+    name: "affiche murale",
+    sound: "INSERER LE PATH DE L AUDIO",
+    subtitles: "C'est quoi ce charabia sur le mur ? Je devrais m'y pencher...",
+    picture: "/Scene4/ecritureMur.png",
+    alt: "affiche murale",
+    inventory: false,
+    x: 30,
+    y: 40,
+    largeur: 30,
+    indice: true,
+    decryptage: true,
+    imgSrc: "/Scene3/tripoli.png",
   },
   
   // {
@@ -806,6 +835,7 @@ const scene4 = [
     x: 51.2,
     y: 53.5,
     largeur: 25,
+    dechiffrage: "45135525 136 556591"
   },
 ];
 
@@ -867,6 +897,8 @@ const scene5 = [
     x: 60,
     y: 68,
     largeur: 50,
+    decryptage: true,
+    imgSrc: "/Scene5/morse.png",
   },
   {
     id: 5,
