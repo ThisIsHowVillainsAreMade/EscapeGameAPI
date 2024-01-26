@@ -475,12 +475,12 @@ const scene2 = [
     picture: "/Scene1/padlock-303266_1280.png",
     sound: "static1/scene2/sc2id15.mp3",
     alt: "cadenas",
-    code: "Quinte flush royale",
+    code: "LES JEUX SONT FAITS",
     inventory: false,
     x: 46.95,
     y: 47.7,
     largeur: 20,
-    dechiffrage: "Qjx ojzc xtsy kfnyx",
+    dechiffrage: "qjx ojzc xtsy kfnyx",
   },
 ];
 
@@ -515,7 +515,7 @@ const scene3 = [
     largeur: 60,
     indice: true,
     decryptage: true,
-    imgSrc: "/Scene3/Pigpen.png",
+    imgSrc: "/Scene3/Pigben1.png",
   },
   {
     id: 3,
@@ -531,7 +531,7 @@ const scene3 = [
     largeur: 50,
     indice: true,
     decryptage: true,
-    imgSrc: "/Scene3/Pigpen.png",
+    imgSrc: "/Scene3/Pigben2.png",
   },
   {
     id: 4,
@@ -546,7 +546,7 @@ const scene3 = [
     largeur: 30,
     indice: true,
     decryptage: true,
-    imgSrc: "/Scene3/Pigpen.png",
+    imgSrc: "/Scene3/Pigben3.png",
   },
   {
     id: 5,
@@ -562,7 +562,7 @@ const scene3 = [
     largeur: 220,
     indice: true,
     decryptage: true,
-    imgSrc: "/Scene3/Pigpen.png",
+    imgSrc: "/Scene3/Pigben4.png",
   },
   // Objets Autres
   {
@@ -700,7 +700,7 @@ const scene3 = [
     x: 28.5,
     y: 59.8,
     largeur: 30,
-    dechiffrage: "/Scene3/Pigpen.png",
+    dechiffrage: "/Scene3/mdp.png",
   },
 ];
 
@@ -734,7 +734,7 @@ const scene4 = [
     largeur: 90,
     indice: true,
     decryptage: true,
-    imgSrc: "/Scene3/tripoli.png",
+    imgSrc: "/Scene4/tripoli1.png",
   },
   {
     id: 3,
@@ -777,6 +777,8 @@ const scene4 = [
     x: 36,
     y: 40,
     largeur: 125,
+    decryptage: true,
+    imgSrc: "/Scene4/tripoli2.png",
   },
   {
     id: 5,
