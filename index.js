@@ -736,19 +736,19 @@ const scene4 = [
     decryptage: true,
     imgSrc: "/Scene4/tripoli1.png",
   },
-  {
-    id: 3,
-    name: "affiche murale",
-    sound: "static1/scene4/sc4id3.mp3",
-    subtitles: "C'est quoi ce charabia sur le mur ? Je devrais m'y pencher...",
-    picture: "/Scene4/ecritureMur.png",
-    alt: "affiche murale",
-    inventory: false,
-    x: 30,
-    y: 40,
-    largeur: 30,
-    indice: true,
-  },
+  // {
+  //   id: 3,
+  //   name: "affiche murale",
+  //   sound: "static1/scene4/sc4id3.mp3",
+  //   subtitles: "C'est quoi ce charabia sur le mur ? Je devrais m'y pencher...",
+  //   picture: "/Scene4/ecritureMur.png",
+  //   alt: "affiche murale",
+  //   inventory: false,
+  //   x: 30,
+  //   y: 40,
+  //   largeur: 30,
+  //   indice: true,
+  // },
   // {
   //   id: 3,
   //   name: "affiche murale",
@@ -1093,6 +1093,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/narration", (req, res) => {
+  console.log("ABDOU ICI");
   res.json(narration);
 });
 
